@@ -1,3 +1,5 @@
+from typing import List, Optional, Tuple
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -8,8 +10,23 @@ TITLE_PADDING = 15
 
 
 def calculate_match_outcomes(
-    df_results, home_team="Brazil", away_team="Colombia"
-):
+    df_results: pd.DataFrame, home_team: str = "Brazil", away_team: str = "Colombia"
+) -> pd.DataFrame:
+    """
+    Calculates the outcome distribution of matches between two teams and
+    returns the percentage of wins for each team and draws.
+
+    :param df_results: DataFrame containing match results with columns
+        ['home_team', 'away_team', 'home_score', 'away_score'].
+    :param home_team: Name of the first team for the matchup (default is
+        "Brazil").
+    :param away_team: Name of the second team for the matchup (default
+        is "Colombia").
+    :return: DataFrame containing the outcome distribution with columns
+        ['Resultado', 'Percentual'], where 'Resultado' is the match
+        result (Home Win, Away Win, Draw) and 'Percentual' is the
+        percentage of each result.
+    """
     matches = df_results[
         (
             (df_results["home_team"] == home_team)
@@ -57,13 +74,29 @@ def calculate_match_outcomes(
 
 
 def create_pie_chart(
-    df,
-    labels_col,
-    values_col,
-    title="",
-    figsize=(8, 8),
-    colors=["#ff9999", "#66b3ff", "#99ff99"],
-):
+    df: pd.DataFrame,
+    labels_col: str,
+    values_col: str,
+    title: str = "",
+    figsize: Tuple[int, int] = (8, 8),
+    colors: List[str] = ["#ff9999", "#66b3ff", "#99ff99"],
+) -> None:
+    """
+    Creates a pie chart with labels and values from a DataFrame, and
+    customizes the appearance.
+
+    :param df: DataFrame containing the data for the pie chart.
+    :param labels_col: Column name in the DataFrame containing the
+        labels for the pie slices.
+    :param values_col: Column name in the DataFrame containing the
+        values for the pie slices.
+    :param title: Title of the pie chart (default is an empty string).
+    :param figsize: Tuple specifying the size of the figure (default is
+        (8, 8)).
+    :param colors: List of colors to be used for the pie slices (default
+        is a predefined color list).
+    :return: None
+    """
     fig, ax = plt.subplots(figsize=figsize, facecolor=BACKGROUND_COLOR)
     ax.set_facecolor(BACKGROUND_COLOR)
 
@@ -113,8 +146,27 @@ def create_pie_chart(
 
 
 def calculate_team_performance(
-    df_results, team_name, tournament=None, last_n_games=None
-):
+    df_results: pd.DataFrame,
+    team_name: str,
+    tournament: Optional[str] = None,
+    last_n_games: Optional[int] = None,
+) -> pd.DataFrame:
+    """
+    Calculates the performance of a team in terms of wins, losses, and
+    draws, optionally filtering by tournament and the last N games.
+
+    :param df_results: DataFrame containing match results with columns
+        ['home_team', 'away_team', 'home_score', 'away_score',
+        'tournament', 'date'].
+    :param team_name: Name of the team for which to calculate
+        performance.
+    :param tournament: Name of the tournament to filter the matches
+        (optional).
+    :param last_n_games: Number of most recent games to include in the
+        calculation (optional).
+    :return: DataFrame with columns ['Resultado', 'Percentual'] showing
+             the distribution of wins, losses, and draws as percentages.
+    """
     if tournament:
         matches = df_results[
             (
@@ -130,9 +182,7 @@ def calculate_team_performance(
         ]
 
     if last_n_games:
-        matches = matches.sort_values(by="date", ascending=False).head(
-            last_n_games
-        )
+        matches = matches.sort_values(by="date", ascending=False).head(last_n_games)
 
     outcomes = {"Vitórias": 0, "Derrotas": 0, "Empates": 0}
 
@@ -162,15 +212,37 @@ def calculate_team_performance(
 
 
 def create_side_by_side_pie_charts(
-    df1,
-    df2,
-    labels_col,
-    values_col,
-    title1="",
-    title2="",
-    figsize=(16, 8),
-    colors=["#ff9999", "#66b3ff", "#99ff99"],
-):
+    df1: pd.DataFrame,
+    df2: pd.DataFrame,
+    labels_col: str,
+    values_col: str,
+    title1: str = "",
+    title2: str = "",
+    figsize: Tuple[int, int] = (16, 8),
+    colors: List[str] = ["#ff9999", "#66b3ff", "#99ff99"],
+) -> None:
+    """
+    Creates two side-by-side pie charts comparing two DataFrames.
+
+    :param df1: First DataFrame containing the data for the first pie
+        chart.
+    :param df2: Second DataFrame containing the data for the second pie
+        chart.
+    :param labels_col: Column name in both DataFrames containing the
+        labels for the pie slices.
+    :param values_col: Column name in both DataFrames containing the
+        values for the pie slices.
+    :param title1: Title of the first pie chart (default is an empty
+        string).
+    :param title2: Title of the second pie chart (default is an empty
+        string).
+    :param figsize: Tuple specifying the size of the figure (default is
+        (16, 8)).
+    :param colors: List of colors to be used for the pie slices (default
+        is a predefined color list).
+    :return: None
+    """
+
     fig, axs = plt.subplots(1, 2, figsize=figsize, facecolor=BACKGROUND_COLOR)
     axs[0].set_facecolor(BACKGROUND_COLOR)
     axs[1].set_facecolor(BACKGROUND_COLOR)
@@ -262,8 +334,23 @@ def create_side_by_side_pie_charts(
 
 
 def calculate_goal_percentage(
-    df_results, team_name, tournament="Copa América"
-):
+    df_results: pd.DataFrame, team_name: str, tournament: Optional[str] = "Copa América"
+) -> pd.DataFrame:
+    """
+    Calculates the percentage of matches where a team scored at least
+    one goal in a given tournament.
+
+    :param df_results: DataFrame containing match results with columns
+        ['home_team', 'away_team', 'home_score', 'away_score',
+        'tournament'].
+    :param team_name: Name of the team for which to calculate the goal
+        percentage.
+    :param tournament: Name of the tournament to filter the matches
+        (default is "Copa América").
+    :return: DataFrame with columns ['Resultado', 'Percentual'], showing
+             the percentage of matches where the team scored and did not
+             score.
+    """
     matches = df_results[
         (
             (df_results["home_team"] == team_name)
@@ -291,7 +378,23 @@ def calculate_goal_percentage(
     return outcome_df
 
 
-def calculate_recent_goal_percentage(df_results, team_name, last_n_games=10):
+def calculate_recent_goal_percentage(
+    df_results: pd.DataFrame, team_name: str, last_n_games: Optional[int] = 10
+) -> pd.DataFrame:
+    """
+    Calculates the percentage of recent matches where a team scored at
+    least one goal.
+
+    :param df_results: DataFrame containing match results with columns
+        ['home_team', 'away_team', 'home_score', 'away_score', 'date'].
+    :param team_name: Name of the team for which to calculate the goal
+        percentage.
+    :param last_n_games: Number of most recent games to include in the
+        calculation (default is 10).
+    :return: DataFrame with columns ['Resultado', 'Percentual'], showing
+             the percentage of matches where the team scored and did not
+             score in the last N games.
+    """
     matches = (
         df_results[
             (df_results["home_team"] == team_name)
@@ -321,8 +424,18 @@ def calculate_recent_goal_percentage(df_results, team_name, last_n_games=10):
 
 
 def calculate_goal_scenarios(
-    df_results, home_team="Brazil", away_team="Colombia"
-):
+    df_results: pd.DataFrame, home_team: str = "Brazil", away_team: str = "Colombia"
+) -> pd.DataFrame:
+    """
+    Calculates the goal scenarios between two teams, showing the percentage of matches
+    where both teams scored, neither scored, or only one team scored.
+
+    :param df_results: DataFrame containing match results with columns
+        ['home_team', 'away_team', 'home_score', 'away_score'].
+    :param home_team: Name of the home team (default is "Brazil").
+    :param away_team: Name of the away team (default is "Colombia").
+    :return: DataFrame with columns ['Cenário', 'Percentual'] showing the percentage of goal scenarios.
+    """
     matches = df_results[
         (
             (df_results["home_team"] == home_team)
@@ -363,9 +476,7 @@ def calculate_goal_scenarios(
             scenarios["Só Colombia Marcou"] += 1
 
     total_matches = sum(scenarios.values())
-    scenario_distribution = {
-        k: v / total_matches for k, v in scenarios.items()
-    }
+    scenario_distribution = {k: v / total_matches for k, v in scenarios.items()}
 
     scenario_df = pd.DataFrame(
         list(scenario_distribution.items()), columns=["Cenário", "Percentual"]
@@ -374,8 +485,23 @@ def calculate_goal_scenarios(
 
 
 def calculate_team_statistics(
-    df_results, team_name, tournament="Copa América"
-):
+    df_results: pd.DataFrame, team_name: str, tournament: Optional[str] = "Copa América"
+) -> pd.DataFrame:
+    """
+    Calculates the performance scenarios of a team in a tournament,
+    showing the percentage of matches where the team won, lost, drew, or
+    did not score.
+
+    :param df_results: DataFrame containing match results with columns
+        ['home_team', 'away_team', 'home_score', 'away_score',
+        'tournament'].
+    :param team_name: Name of the team for which to calculate
+        statistics.
+    :param tournament: Name of the tournament to filter matches (default
+        is "Copa América").
+    :return: DataFrame with columns ['Cenário', 'Percentual'] showing
+        the percentage of performance scenarios.
+    """
     matches = df_results[
         (
             (df_results["home_team"] == team_name)
@@ -420,15 +546,34 @@ def calculate_team_statistics(
 
 
 def create_horizontal_bar_plot(
-    df1,
-    df2,
-    labels_col,
-    values_col,
-    title1="",
-    title2="",
-    figsize=(20, 8),
-    colors=["#d3d3d3", "#a9a9a9", "#808080", "#696969"],
-):
+    df1: pd.DataFrame,
+    df2: pd.DataFrame,
+    labels_col: str,
+    values_col: str,
+    title1: str = "",
+    title2: str = "",
+    figsize: Tuple[int, int] = (20, 8),
+    colors: List[str] = ["#d3d3d3", "#a9a9a9", "#808080", "#696969"],
+) -> None:
+    """
+    Creates side-by-side horizontal bar plots comparing two DataFrames.
+
+    :param df1: First DataFrame for the first plot.
+    :param df2: Second DataFrame for the second plot.
+    :param labels_col: Column name in both DataFrames containing the
+        labels for the bars.
+    :param values_col: Column name in both DataFrames containing the
+        values for the bars.
+    :param title1: Title of the first bar plot (default is an empty
+        string).
+    :param title2: Title of the second bar plot (default is an empty
+        string).
+    :param figsize: Tuple specifying the size of the figure (default is
+        (20, 8)).
+    :param colors: List of colors for the bars (default is a predefined
+        color list).
+    :return: None
+    """
     fig, axs = plt.subplots(1, 2, figsize=figsize, facecolor=BACKGROUND_COLOR)
     fig.subplots_adjust(wspace=0.4)
     axs[0].set_facecolor(BACKGROUND_COLOR)
@@ -527,8 +672,19 @@ def create_horizontal_bar_plot(
 
 
 def calculate_goal_intervals(
-    df_goalscorers, df_results, tournament="Copa América"
-):
+    df_goalscorers: pd.DataFrame,
+    df_results: pd.DataFrame,
+    tournament: Optional[str] = "Copa América",
+) -> pd.DataFrame:
+    """
+    Calculates the percentage distribution of goals scored in different time intervals
+    for a given tournament.
+
+    :param df_goalscorers: DataFrame containing goalscorers data with columns ['minute', 'date', 'home_team', 'away_team'].
+    :param df_results: DataFrame containing match results with columns ['tournament', 'date', 'home_team', 'away_team'].
+    :param tournament: Name of the tournament to filter the matches (default is "Copa América").
+    :return: DataFrame with columns ['Intervalo', 'Percentual'] showing the percentage of goals in each time interval.
+    """
     copa_matches = df_results[df_results["tournament"] == tournament]
 
     copa_goals = df_goalscorers.merge(
@@ -542,9 +698,7 @@ def calculate_goal_intervals(
         copa_goals["minute"], bins=bins, labels=labels, right=False
     )
 
-    goal_counts = (
-        copa_goals["interval"].value_counts(normalize=True).sort_index() * 100
-    )
+    goal_counts = copa_goals["interval"].value_counts(normalize=True).sort_index() * 100
 
     return goal_counts.reset_index().rename(
         columns={"interval": "Intervalo", "proportion": "Percentual"}
@@ -552,8 +706,29 @@ def calculate_goal_intervals(
 
 
 def create_vertical_bar_plot(
-    df, x, y, title="", xlabel="", ylabel="", figsize=(12, 8), color="#244747"
-):
+    df: pd.DataFrame,
+    x: str,
+    y: str,
+    title: Optional[str] = "",
+    xlabel: Optional[str] = "",
+    ylabel: Optional[str] = "",
+    figsize: Tuple[int, int] = (12, 8),
+    color: str = "#244747",
+) -> None:
+    """
+    Creates a vertical bar plot from the provided DataFrame.
+
+    :param df: DataFrame containing the data to plot.
+    :param x: Column name for the x-axis labels.
+    :param y: Column name for the y-axis values.
+    :param title: Title of the plot (optional).
+    :param xlabel: Label for the x-axis (optional).
+    :param ylabel: Label for the y-axis (optional).
+    :param figsize: Tuple specifying the size of the figure (default is
+        (12, 8)).
+    :param color: Color for the bars (default is "#244747").
+    :return: None
+    """
     fig, ax = plt.subplots(figsize=figsize, facecolor=BACKGROUND_COLOR)
     ax.set_facecolor(BACKGROUND_COLOR)
     bars = ax.bar(df[x], df[y], color=color, edgecolor="black")
@@ -581,9 +756,7 @@ def create_vertical_bar_plot(
         fontfamily=FONTFAMILY,
         pad=TITLE_PADDING,
     )
-    ax.set_xlabel(
-        xlabel, fontfamily=FONTFAMILY, loc="left", color="gray", fontsize=14
-    )
+    ax.set_xlabel(xlabel, fontfamily=FONTFAMILY, loc="left", color="gray", fontsize=14)
     ax.set_ylabel(
         ylabel, fontfamily=FONTFAMILY, loc="bottom", color="gray", fontsize=14
     )
@@ -595,8 +768,24 @@ def create_vertical_bar_plot(
 
 
 def calculate_goal_intervals_brazil_colombia(
-    df_goalscorers, df_results, home_team="Brazil", away_team="Colombia"
-):
+    df_goalscorers: pd.DataFrame,
+    df_results: pd.DataFrame,
+    home_team: str = "Brazil",
+    away_team: str = "Colombia",
+) -> pd.DataFrame:
+    """
+    Calculates the percentage distribution of goals scored in different
+    time intervals for matches between Brazil and Colombia.
+
+    :param df_goalscorers: DataFrame containing goalscorers data with
+        columns ['minute', 'date', 'home_team', 'away_team'].
+    :param df_results: DataFrame containing match results with columns
+        ['date', 'home_team', 'away_team'].
+    :param home_team: Name of the home team (default is "Brazil").
+    :param away_team: Name of the away team (default is "Colombia").
+    :return: DataFrame with columns ['Intervalo', 'Percentual'] showing
+        the percentage of goals in each time interval.
+    """
     matches = df_results[
         (
             (df_results["home_team"] == home_team)
@@ -620,9 +809,7 @@ def calculate_goal_intervals_brazil_colombia(
     )
 
     goal_counts = (
-        goals_brazil_colombia["interval"]
-        .value_counts(normalize=True)
-        .sort_index()
+        goals_brazil_colombia["interval"].value_counts(normalize=True).sort_index()
         * 100
     )
 
@@ -631,7 +818,17 @@ def calculate_goal_intervals_brazil_colombia(
     )
 
 
-def calculate_goal_times(df_goalscorers, df_results, filter_matches):
+def calculate_goal_times(
+    df_goalscorers: pd.DataFrame, df_results: pd.DataFrame, filter_matches: pd.DataFrame
+) -> pd.DataFrame:
+    """
+    Calculates the distribution of goals scored in the first half, second half, or both halves.
+
+    :param df_goalscorers: DataFrame containing goalscorers data with columns ['minute', 'date', 'home_team', 'away_team'].
+    :param df_results: DataFrame containing match results.
+    :param filter_matches: DataFrame containing the filtered matches to analyze.
+    :return: DataFrame with columns ['Cenário', 'Percentual'] showing the distribution of goals scored in different halves.
+    """
     goals_data = df_goalscorers.merge(
         filter_matches, on=["date", "home_team", "away_team"]
     )
@@ -661,9 +858,7 @@ def calculate_goal_times(df_goalscorers, df_results, filter_matches):
             scenarios["Só 2º Tempo"] += 1
 
     total_matches = sum(scenarios.values())
-    scenario_distribution = {
-        k: v / total_matches for k, v in scenarios.items()
-    }
+    scenario_distribution = {k: v / total_matches for k, v in scenarios.items()}
 
     scenario_df = pd.DataFrame(
         list(scenario_distribution.items()), columns=["Cenário", "Percentual"]
@@ -672,8 +867,19 @@ def calculate_goal_times(df_goalscorers, df_results, filter_matches):
 
 
 def calculate_goal_distribution_brazil_colombia(
-    df_results, home_team="Brazil", away_team="Colombia"
-):
+    df_results: pd.DataFrame, home_team: str = "Brazil", away_team: str = "Colombia"
+) -> pd.DataFrame:
+    """
+    Calculates the goal distribution for matches between Brazil and
+    Colombia based on total goals scored.
+
+    :param df_results: DataFrame containing match results with columns
+        ['home_team', 'away_team', 'home_score', 'away_score'].
+    :param home_team: Name of the home team (default is "Brazil").
+    :param away_team: Name of the away team (default is "Colombia").
+    :return: DataFrame with columns ['Gols', 'Percentual'] showing the
+        distribution of total goals per match.
+    """
     matches = df_results[
         (
             (df_results["home_team"] == home_team)
@@ -711,7 +917,20 @@ def calculate_goal_distribution_brazil_colombia(
     )
 
 
-def calculate_goal_distribution(df_results, tournament="Copa América"):
+def calculate_goal_distribution(
+    df_results: pd.DataFrame, tournament: Optional[str] = "Copa América"
+) -> pd.DataFrame:
+    """
+    Calculates the goal distribution for a given tournament based on
+    total goals scored.
+
+    :param df_results: DataFrame containing match results with columns
+        ['home_score', 'away_score', 'tournament'].
+    :param tournament: Name of the tournament to filter matches (default
+        is "Copa América").
+    :return: DataFrame with columns ['Gols', 'Percentual'] showing the
+        distribution of total goals per match in the tournament.
+    """
     matches = df_results[df_results["tournament"] == tournament]
     matches["total_goals"] = matches["home_score"] + matches["away_score"]
 
