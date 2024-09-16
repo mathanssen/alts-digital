@@ -1,0 +1,423 @@
+fixture_id,league_id,season,round,home_team,away_team,goals_home,goals_away,yellow_cards_home,yellow_cards_away,red_cards_home,red_cards_away,corner_kicks_home,corner_kicks_away
+1149590,13,2024,2nd Round,Rionegro Aguilas,RB Bragantino,0.0,0.0,2.0,3.0,,,2,6
+1149591,13,2024,2nd Round,RB Bragantino,Rionegro Aguilas,0.0,0.0,4.0,4.0,,,7,3
+1149592,13,2024,2nd Round,Always Ready,Sporting Cristal,6.0,1.0,2.0,5.0,0.0,2.0,3,2
+1149593,13,2024,2nd Round,Sporting Cristal,Always Ready,3.0,1.0,4.0,2.0,,,14,0
+1149594,13,2024,2nd Round,Godoy Cruz,Colo Colo,0.0,1.0,1.0,2.0,,,2,4
+1149595,13,2024,2nd Round,Colo Colo,Godoy Cruz,0.0,0.0,3.0,4.0,,,1,3
+1149596,13,2024,2nd Round,Sportivo Trinidense,El Nacional,1.0,1.0,2.0,3.0,,,4,3
+1149597,13,2024,2nd Round,El Nacional,Sportivo Trinidense,0.0,1.0,3.0,8.0,,,6,7
+1149598,13,2024,2nd Round,Portuguesa FC,Palestino,1.0,2.0,1.0,1.0,,,9,2
+1149599,13,2024,2nd Round,Palestino,Portuguesa FC,2.0,1.0,,,,,1,4
+1149600,13,2024,1st Round,Puerto Cabello,Defensor Sporting,3.0,2.0,4.0,3.0,,,2,1
+1149601,13,2024,1st Round,Defensor Sporting,Puerto Cabello,1.0,0.0,3.0,5.0,0.0,1.0,7,1
+1149602,13,2024,1st Round,Aurora,FBC Melgar,1.0,0.0,2.0,3.0,0.0,1.0,2,5
+1149603,13,2024,1st Round,FBC Melgar,Aurora,1.0,1.0,3.0,6.0,0.0,2.0,8,0
+1149604,13,2024,1st Round,Aucas,Nacional Asuncion,1.0,0.0,3.0,5.0,,,6,4
+1149605,13,2024,1st Round,Nacional Asuncion,Aucas,3.0,0.0,0.0,0.0,0.0,0.0,0,0
+1174580,13,2024,2nd Round,Puerto Cabello,Club Nacional,0.0,2.0,4.0,3.0,1.0,0.0,3,6
+1174581,13,2024,2nd Round,Club Nacional,Puerto Cabello,2.0,0.0,0.0,3.0,,,4,0
+1174582,13,2024,2nd Round,Aurora,Botafogo,1.0,1.0,3.0,3.0,0.0,0.0,6,2
+1174583,13,2024,2nd Round,Botafogo,Aurora,6.0,0.0,2.0,5.0,,,0,3
+1174742,13,2024,2nd Round,Nacional Asuncion,Atletico Nacional,1.0,0.0,0.0,0.0,0.0,0.0,0,0
+1174743,13,2024,2nd Round,Atletico Nacional,Nacional Asuncion,0.0,3.0,0.0,0.0,0.0,0.0,0,0
+1178189,13,2024,3rd Round,Botafogo,RB Bragantino,2.0,1.0,1.0,1.0,,,2,0
+1178190,13,2024,3rd Round,RB Bragantino,Botafogo,1.0,1.0,1.0,5.0,0.0,1.0,10,4
+1178191,13,2024,3rd Round,Nacional Asuncion,Palestino,0.0,2.0,5.0,1.0,,,4,4
+1178192,13,2024,3rd Round,Palestino,Nacional Asuncion,1.0,3.0,0.0,0.0,0.0,0.0,0,0
+1178193,13,2024,3rd Round,Always Ready,Club Nacional,1.0,0.0,1.0,5.0,,,6,0
+1178194,13,2024,3rd Round,Club Nacional,Always Ready,2.0,1.0,5.0,4.0,1.0,0.0,8,3
+1180019,13,2024,3rd Round,Sportivo Trinidense,Colo Colo,1.0,1.0,2.0,4.0,,,2,11
+1180020,13,2024,3rd Round,Colo Colo,Sportivo Trinidense,2.0,1.0,2.0,3.0,,,4,5
+1187185,13,2024,Group Stage - 1,Cobresal,Barcelona SC,1.0,1.0,0.0,3.0,,,5,4
+1187186,13,2024,Group Stage - 1,Millonarios,Flamengo,1.0,1.0,1.0,1.0,1.0,0.0,5,4
+1187187,13,2024,Group Stage - 1,The Strongest,Gremio,2.0,0.0,2.0,0.0,,,5,4
+1187188,13,2024,Group Stage - 1,Deportivo Tachira FC,River Plate,0.0,2.0,2.0,2.0,,,4,2
+1187189,13,2024,Group Stage - 1,Universitario,LDU de Quito,2.0,1.0,3.0,2.0,,,1,1
+1187190,13,2024,Group Stage - 1,Club Nacional,Libertad Asuncion,2.0,0.0,1.0,2.0,,,5,4
+1187191,13,2024,Group Stage - 1,Botafogo,Junior,1.0,3.0,2.0,3.0,,,5,3
+1187192,13,2024,Group Stage - 1,Huachipato,Estudiantes L.P.,1.0,1.0,1.0,2.0,,,2,4
+1187193,13,2024,Group Stage - 1,Colo Colo,Cerro Porteno,1.0,0.0,2.0,4.0,,,1,3
+1187194,13,2024,Group Stage - 1,San Lorenzo,Palmeiras,1.0,1.0,6.0,4.0,,,5,5
+1187195,13,2024,Group Stage - 1,Alianza Lima,Fluminense,1.0,1.0,2.0,1.0,,,1,2
+1187196,13,2024,Group Stage - 1,Caracas FC,Atletico-MG,1.0,4.0,,,,,4,2
+1187197,13,2024,Group Stage - 1,Rosario Central,Penarol,1.0,0.0,3.0,4.0,,,5,4
+1187198,13,2024,Group Stage - 1,Liverpool Montevideo,Independiente del Valle,1.0,1.0,1.0,2.0,1.0,0.0,3,2
+1187199,13,2024,Group Stage - 1,Talleres Cordoba,Sao Paulo,2.0,1.0,4.0,2.0,,,0,5
+1187200,13,2024,Group Stage - 1,Palestino,Bolívar,0.0,4.0,6.0,1.0,1.0,0.0,8,6
+1187201,13,2024,Group Stage - 2,Estudiantes L.P.,The Strongest,2.0,1.0,1.0,1.0,0.0,1.0,10,3
+1187202,13,2024,Group Stage - 2,Gremio,Huachipato,0.0,2.0,2.0,3.0,,,4,3
+1187203,13,2024,Group Stage - 2,Libertad Asuncion,Deportivo Tachira FC,3.0,0.0,1.0,3.0,,,5,1
+1187204,13,2024,Group Stage - 2,Fluminense,Colo Colo,2.0,1.0,2.0,4.0,0.0,1.0,3,4
+1187205,13,2024,Group Stage - 2,Junior,Universitario,1.0,1.0,1.0,2.0,,,7,3
+1187206,13,2024,Group Stage - 2,Independiente del Valle,San Lorenzo,2.0,0.0,2.0,4.0,,,2,4
+1187207,13,2024,Group Stage - 2,Cerro Porteno,Alianza Lima,1.0,0.0,4.0,4.0,,,7,2
+1187208,13,2024,Group Stage - 2,Atletico-MG,Rosario Central,2.0,1.0,2.0,3.0,,,4,2
+1187209,13,2024,Group Stage - 2,Penarol,Caracas FC,5.0,0.0,2.0,1.0,0.0,1.0,6,3
+1187210,13,2024,Group Stage - 2,Flamengo,Palestino,2.0,0.0,2.0,4.0,,,9,3
+1187211,13,2024,Group Stage - 2,Sao Paulo,Cobresal,2.0,0.0,3.0,5.0,,,7,4
+1187212,13,2024,Group Stage - 2,Barcelona SC,Talleres Cordoba,2.0,2.0,4.0,3.0,,,5,5
+1187213,13,2024,Group Stage - 2,Bolívar,Millonarios,3.0,2.0,2.0,2.0,1.0,1.0,4,5
+1187214,13,2024,Group Stage - 2,LDU de Quito,Botafogo,1.0,0.0,3.0,0.0,,,8,3
+1187215,13,2024,Group Stage - 2,Palmeiras,Liverpool Montevideo,3.0,1.0,2.0,5.0,,,5,1
+1187216,13,2024,Group Stage - 2,River Plate,Club Nacional,2.0,0.0,0.0,3.0,,,7,2
+1187217,13,2024,Group Stage - 3,Estudiantes L.P.,Gremio,0.0,1.0,2.0,7.0,0.0,1.0,8,4
+1187218,13,2024,Group Stage - 3,Caracas FC,Rosario Central,1.0,1.0,3.0,2.0,,,1,11
+1187219,13,2024,Group Stage - 3,Atletico-MG,Penarol,3.0,2.0,4.0,1.0,,,3,5
+1187220,13,2024,Group Stage - 3,Liverpool Montevideo,San Lorenzo,1.0,0.0,1.0,3.0,,,5,5
+1187221,13,2024,Group Stage - 3,Colo Colo,Alianza Lima,0.0,0.0,5.0,4.0,,,10,2
+1187222,13,2024,Group Stage - 3,Junior,LDU de Quito,1.0,1.0,3.0,3.0,,,3,6
+1187223,13,2024,Group Stage - 3,Botafogo,Universitario,3.0,1.0,2.0,4.0,,,3,4
+1187224,13,2024,Group Stage - 3,Club Nacional,Deportivo Tachira FC,2.0,1.0,2.0,3.0,,,7,3
+1187225,13,2024,Group Stage - 3,Huachipato,The Strongest,0.0,0.0,2.0,2.0,,,12,2
+1187226,13,2024,Group Stage - 3,Libertad Asuncion,River Plate,1.0,2.0,3.0,3.0,,,7,7
+1187227,13,2024,Group Stage - 3,Bolívar,Flamengo,2.0,1.0,,,,,9,0
+1187228,13,2024,Group Stage - 3,Independiente del Valle,Palmeiras,2.0,3.0,3.0,2.0,,,5,6
+1187229,13,2024,Group Stage - 3,Cobresal,Talleres Cordoba,0.0,2.0,1.0,2.0,,,12,7
+1187230,13,2024,Group Stage - 3,Cerro Porteno,Fluminense,0.0,0.0,3.0,2.0,,,1,3
+1187231,13,2024,Group Stage - 3,Barcelona SC,Sao Paulo,0.0,2.0,1.0,0.0,,,2,2
+1187232,13,2024,Group Stage - 3,Palestino,Millonarios,3.0,1.0,1.0,1.0,,,2,5
+1187233,13,2024,Group Stage - 4,Caracas FC,Penarol,0.0,1.0,2.0,1.0,,,5,2
+1187234,13,2024,Group Stage - 4,Rosario Central,Atletico-MG,0.0,1.0,1.0,4.0,,,2,6
+1187235,13,2024,Group Stage - 4,Club Nacional,River Plate,2.0,2.0,7.0,2.0,,,12,2
+1187236,13,2024,Group Stage - 4,Palestino,Flamengo,1.0,0.0,2.0,3.0,,,6,5
+1187237,13,2024,Group Stage - 4,Deportivo Tachira FC,Libertad Asuncion,1.0,1.0,1.0,2.0,,,4,3
+1187238,13,2024,Group Stage - 4,Universitario,Junior,1.0,1.0,2.0,2.0,,,5,5
+1187239,13,2024,Group Stage - 4,Huachipato,Gremio,0.0,1.0,3.0,2.0,0.0,0.0,6,5
+1187240,13,2024,Group Stage - 4,Talleres Cordoba,Barcelona SC,3.0,1.0,1.0,4.0,,,5,5
+1187241,13,2024,Group Stage - 4,Alianza Lima,Cerro Porteno,1.0,1.0,2.0,3.0,,,9,3
+1187242,13,2024,Group Stage - 4,Botafogo,LDU de Quito,2.0,1.0,4.0,3.0,,,1,5
+1187243,13,2024,Group Stage - 4,Cobresal,Sao Paulo,1.0,3.0,2.0,0.0,,,2,3
+1187244,13,2024,Group Stage - 4,Millonarios,Bolívar,1.0,1.0,4.0,4.0,,,3,6
+1187245,13,2024,Group Stage - 4,San Lorenzo,Independiente del Valle,2.0,0.0,2.0,3.0,1.0,0.0,5,2
+1187246,13,2024,Group Stage - 4,Liverpool Montevideo,Palmeiras,0.0,5.0,1.0,2.0,,,5,3
+1187247,13,2024,Group Stage - 4,Colo Colo,Fluminense,0.0,1.0,2.0,6.0,,,4,2
+1187248,13,2024,Group Stage - 4,The Strongest,Estudiantes L.P.,1.0,0.0,2.0,3.0,,,0,7
+1187249,13,2024,Group Stage - 5,Talleres Cordoba,Cobresal,1.0,0.0,3.0,2.0,,,7,4
+1187250,13,2024,Group Stage - 5,LDU de Quito,Junior,0.0,1.0,1.0,1.0,,,8,2
+1187251,13,2024,Group Stage - 5,Penarol,Atletico-MG,2.0,0.0,3.0,4.0,,,2,2
+1187252,13,2024,Group Stage - 5,River Plate,Libertad Asuncion,2.0,0.0,1.0,2.0,,,6,7
+1187253,13,2024,Group Stage - 5,Millonarios,Palestino,1.0,1.0,1.0,4.0,,,7,4
+1187254,13,2024,Group Stage - 5,The Strongest,Huachipato,4.0,0.0,1.0,6.0,0.0,1.0,7,3
+1187255,13,2024,Group Stage - 5,Deportivo Tachira FC,Club Nacional,0.0,1.0,2.0,6.0,1.0,0.0,0,1
+1187256,13,2024,Group Stage - 5,Gremio,Estudiantes L.P.,1.0,1.0,3.0,4.0,,,5,9
+1187257,13,2024,Group Stage - 5,Alianza Lima,Colo Colo,1.0,1.0,3.0,5.0,0.0,2.0,2,2
+1187258,13,2024,Group Stage - 5,Flamengo,Bolívar,4.0,0.0,1.0,2.0,,,5,5
+1187259,13,2024,Group Stage - 5,Palmeiras,Independiente del Valle,2.0,1.0,0.0,2.0,,,3,3
+1187260,13,2024,Group Stage - 5,Rosario Central,Caracas FC,4.0,1.0,1.0,1.0,,,3,1
+1187261,13,2024,Group Stage - 5,Fluminense,Cerro Porteno,2.0,1.0,1.0,4.0,0.0,1.0,7,0
+1187262,13,2024,Group Stage - 5,San Lorenzo,Liverpool Montevideo,3.0,2.0,5.0,4.0,0.0,1.0,4,2
+1187263,13,2024,Group Stage - 5,Sao Paulo,Barcelona SC,0.0,0.0,1.0,3.0,,,8,5
+1187264,13,2024,Group Stage - 5,Universitario,Botafogo,0.0,1.0,2.0,2.0,,,11,0
+1187265,13,2024,Group Stage - 6,Junior,Botafogo,0.0,0.0,3.0,2.0,0.0,1.0,4,4
+1187266,13,2024,Group Stage - 6,LDU de Quito,Universitario,2.0,0.0,1.0,2.0,0.0,1.0,5,3
+1187267,13,2024,Group Stage - 6,Atletico-MG,Caracas FC,4.0,0.0,4.0,0.0,0.0,1.0,7,1
+1187268,13,2024,Group Stage - 6,Penarol,Rosario Central,2.0,1.0,5.0,3.0,,,2,5
+1187269,13,2024,Group Stage - 6,Bolívar,Palestino,3.0,1.0,1.0,2.0,,,6,2
+1187270,13,2024,Group Stage - 6,Flamengo,Millonarios,3.0,0.0,0.0,1.0,1.0,0.0,6,1
+1187271,13,2024,Group Stage - 6,Estudiantes L.P.,Huachipato,3.0,4.0,6.0,5.0,,,6,4
+1187272,13,2024,Group Stage - 6,Gremio,The Strongest,4.0,0.0,1.0,3.0,,,10,4
+1187273,13,2024,Group Stage - 6,Cerro Porteno,Colo Colo,1.0,1.0,2.0,3.0,1.0,0.0,6,3
+1187274,13,2024,Group Stage - 6,Fluminense,Alianza Lima,3.0,2.0,6.0,1.0,,,4,9
+1187275,13,2024,Group Stage - 6,Sao Paulo,Talleres Cordoba,2.0,0.0,3.0,4.0,0.0,1.0,5,1
+1187276,13,2024,Group Stage - 6,Barcelona SC,Cobresal,2.0,1.0,1.0,1.0,,,2,2
+1187277,13,2024,Group Stage - 6,Independiente del Valle,Liverpool Montevideo,2.0,1.0,1.0,4.0,,,14,3
+1187278,13,2024,Group Stage - 6,Palmeiras,San Lorenzo,0.0,0.0,1.0,3.0,,,6,1
+1187279,13,2024,Group Stage - 6,River Plate,Deportivo Tachira FC,2.0,0.0,0.0,1.0,0.0,1.0,13,1
+1187280,13,2024,Group Stage - 6,Libertad Asuncion,Club Nacional,2.0,1.0,5.0,3.0,,,1,9
+1202193,13,2024,Round of 16,San Lorenzo,Atletico-MG,1.0,1.0,2.0,0.0,,,1,3
+1202194,13,2024,Round of 16,Atletico-MG,San Lorenzo,1.0,0.0,3.0,3.0,,,4,7
+1202195,13,2024,Round of 16,Club Nacional,Sao Paulo,0.0,0.0,2.0,4.0,,,4,0
+1202196,13,2024,Round of 16,Sao Paulo,Club Nacional,2.0,0.0,2.0,2.0,,,2,4
+1202197,13,2024,Round of 16,Flamengo,Bolívar,2.0,0.0,2.0,1.0,,,12,1
+1202198,13,2024,Round of 16,Bolívar,Flamengo,1.0,0.0,1.0,3.0,1.0,0.0,8,3
+1202199,13,2024,Round of 16,Colo Colo,Junior,1.0,0.0,3.0,4.0,,,6,2
+1202200,13,2024,Round of 16,Junior,Colo Colo,1.0,2.0,1.0,3.0,1.0,0.0,2,3
+1202201,13,2024,Round of 16,Talleres Cordoba,River Plate,0.0,1.0,2.0,3.0,1.0,0.0,0,3
+1202202,13,2024,Round of 16,River Plate,Talleres Cordoba,2.0,1.0,1.0,2.0,,,5,7
+1202203,13,2024,Round of 16,Botafogo,Palmeiras,2.0,1.0,3.0,3.0,,,4,1
+1202204,13,2024,Round of 16,Palmeiras,Botafogo,2.0,2.0,1.0,5.0,,,9,1
+1203722,13,2024,Round of 16,Penarol,The Strongest,4.0,0.0,1.0,3.0,,,8,3
+1203723,13,2024,Round of 16,The Strongest,Penarol,1.0,0.0,3.0,3.0,,,9,1
+1203724,13,2024,Round of 16,Gremio,Fluminense,2.0,1.0,2.0,3.0,1.0,0.0,4,6
+1203725,13,2024,Round of 16,Fluminense,Gremio,2.0,1.0,5.0,3.0,,,7,2
+1294399,13,2024,Quarter-finals,Fluminense,Atletico-MG,,,0.0,0.0,0.0,0.0,0,0
+1294400,13,2024,Quarter-finals,Atletico-MG,Fluminense,,,0.0,0.0,0.0,0.0,0,0
+1294401,13,2024,Quarter-finals,Colo Colo,River Plate,,,0.0,0.0,0.0,0.0,0,0
+1294402,13,2024,Quarter-finals,River Plate,Colo Colo,,,0.0,0.0,0.0,0.0,0,0
+1295064,13,2024,Quarter-finals,Botafogo,Sao Paulo,,,0.0,0.0,0.0,0.0,0,0
+1295065,13,2024,Quarter-finals,Sao Paulo,Botafogo,,,0.0,0.0,0.0,0.0,0,0
+1295066,13,2024,Quarter-finals,Flamengo,Penarol,,,0.0,0.0,0.0,0.0,0,0
+1295067,13,2024,Quarter-finals,Penarol,Flamengo,,,0.0,0.0,0.0,0.0,0,0
+1150508,11,2024,1st Round,Real Tomayapo,Jorge Wilstermann,0.0,0.0,1.0,1.0,,,5,4
+1150509,11,2024,1st Round,Universitario de Vinto,Nacional Potosí,0.0,2.0,0.0,4.0,0.0,1.0,9,4
+1150510,11,2024,1st Round,Everton de Vina,Union La Calera,0.0,1.0,2.0,4.0,,,10,3
+1150511,11,2024,1st Round,Deportes Tolima,Independiente Medellin,0.0,0.0,1.0,1.0,,,7,4
+1150512,11,2024,1st Round,U. Catolica,Coquimbo Unido,0.0,2.0,2.0,2.0,,,5,6
+1150513,11,2024,1st Round,Alianza Petrolera,America de Cali,2.0,1.0,0.0,5.0,,,1,4
+1150514,11,2024,1st Round,Deportivo Cuenca,Delfin SC,2.0,5.0,2.0,4.0,,,4,4
+1150515,11,2024,1st Round,Tecnico Universitario,Universidad Catolica,0.0,3.0,2.0,4.0,,,8,1
+1150516,11,2024,1st Round,Club Guarani,Sportivo Luqueno,0.0,1.0,3.0,2.0,,,4,5
+1150517,11,2024,1st Round,Sportivo Ameliano,Olimpia,2.0,0.0,1.0,6.0,,,3,6
+1150518,11,2024,1st Round,Deportivo Garcilaso,ADT,0.0,0.0,2.0,4.0,,,4,3
+1150519,11,2024,1st Round,Cesar Vallejo,Sport Huancayo,2.0,0.0,2.0,1.0,,,6,2
+1150520,11,2024,1st Round,Wanderers,Danubio,0.0,1.0,3.0,1.0,,,2,1
+1150521,11,2024,1st Round,Racing Montevideo,Cerro Largo,2.0,0.0,3.0,1.0,,,1,8
+1150522,11,2024,1st Round,Carabobo FC,Metropolitanos FC,1.0,1.0,2.0,1.0,0.0,1.0,8,4
+1150523,11,2024,1st Round,Rayo Zuliano,Real Esppor Club,0.0,0.0,2.0,2.0,,,2,5
+1187089,11,2024,Group Stage - 1,Sportivo Ameliano,Atletico Paranaense,1.0,4.0,0.0,2.0,,,2,6
+1187090,11,2024,Group Stage - 1,Nacional Asuncion,Argentinos JRS,2.0,3.0,2.0,1.0,,,3,2
+1187091,11,2024,Group Stage - 1,Belgrano Cordoba,Internacional,0.0,0.0,2.0,3.0,,,5,5
+1187092,11,2024,Group Stage - 1,Racing Montevideo,Corinthians,1.0,1.0,2.0,2.0,,,4,6
+1187093,11,2024,Group Stage - 1,Cesar Vallejo,Defensa Y Justicia,0.0,1.0,2.0,2.0,,,1,6
+1187094,11,2024,Group Stage - 1,Rayo Zuliano,Danubio,0.0,2.0,3.0,3.0,,,3,6
+1187095,11,2024,Group Stage - 1,Cuiaba,Lanus,1.0,1.0,0.0,3.0,,,4,0
+1187096,11,2024,Group Stage - 1,Nacional Potosí,Boca Juniors,0.0,0.0,4.0,5.0,,,4,5
+1187097,11,2024,Group Stage - 1,Sportivo Trinidense,Fortaleza EC,0.0,2.0,2.0,3.0,0.0,1.0,11,6
+1187098,11,2024,Group Stage - 1,RB Bragantino,Coquimbo Unido,1.0,0.0,2.0,2.0,,,3,4
+1187099,11,2024,Group Stage - 1,Alianza Petrolera,Union La Calera,0.0,1.0,4.0,3.0,,,2,3
+1187100,11,2024,Group Stage - 1,Deportivo Garcilaso,Metropolitanos FC,3.0,2.0,0.0,3.0,,,8,0
+1187101,11,2024,Group Stage - 1,Sportivo Luqueno,Racing Club,0.0,2.0,2.0,3.0,,,3,1
+1187102,11,2024,Group Stage - 1,Universidad Catolica,Cruzeiro,0.0,0.0,1.0,1.0,,,7,0
+1187103,11,2024,Group Stage - 1,Always Ready,Independiente Medellin,2.0,0.0,1.0,2.0,,,6,5
+1187104,11,2024,Group Stage - 1,Real Tomayapo,Delfin SC,0.0,2.0,1.0,1.0,,,0,7
+1187105,11,2024,Group Stage - 2,Argentinos JRS,Racing Montevideo,0.0,3.0,2.0,2.0,,,9,1
+1187106,11,2024,Group Stage - 2,Corinthians,Nacional Asuncion,4.0,0.0,2.0,2.0,0.0,1.0,10,0
+1187107,11,2024,Group Stage - 2,Danubio,Sportivo Ameliano,0.0,0.0,0.0,3.0,,,4,4
+1187108,11,2024,Group Stage - 2,Boca Juniors,Sportivo Trinidense,1.0,0.0,0.0,5.0,,,10,6
+1187109,11,2024,Group Stage - 2,Atletico Paranaense,Rayo Zuliano,6.0,0.0,0.0,1.0,,,5,5
+1187110,11,2024,Group Stage - 2,Defensa Y Justicia,Always Ready,1.0,1.0,4.0,5.0,,,3,3
+1187111,11,2024,Group Stage - 2,Fortaleza EC,Nacional Potosí,5.0,0.0,2.0,0.0,1.0,0.0,4,3
+1187112,11,2024,Group Stage - 2,Union La Calera,Universidad Catolica,0.0,1.0,1.0,2.0,,,11,3
+1187113,11,2024,Group Stage - 2,Internacional,Real Tomayapo,0.0,0.0,2.0,1.0,,,12,0
+1187114,11,2024,Group Stage - 2,Racing Club,RB Bragantino,3.0,0.0,2.0,2.0,0.0,1.0,4,5
+1187115,11,2024,Group Stage - 2,Independiente Medellin,Cesar Vallejo,4.0,2.0,0.0,1.0,,,6,3
+1187116,11,2024,Group Stage - 2,Lanus,Deportivo Garcilaso,2.0,1.0,1.0,1.0,0.0,1.0,8,1
+1187117,11,2024,Group Stage - 2,Metropolitanos FC,Cuiaba,0.0,2.0,,,,,3,2
+1187118,11,2024,Group Stage - 2,Cruzeiro,Alianza Petrolera,3.0,3.0,3.0,1.0,,,7,1
+1187119,11,2024,Group Stage - 2,Coquimbo Unido,Sportivo Luqueno,1.0,0.0,3.0,4.0,,,3,2
+1187120,11,2024,Group Stage - 2,Delfin SC,Belgrano Cordoba,1.0,1.0,3.0,5.0,,,9,2
+1187121,11,2024,Group Stage - 3,Union La Calera,Cruzeiro,0.0,0.0,2.0,3.0,,,6,5
+1187122,11,2024,Group Stage - 3,Deportivo Garcilaso,Cuiaba,1.0,1.0,2.0,2.0,1.0,1.0,7,2
+1187123,11,2024,Group Stage - 3,Sportivo Trinidense,Nacional Potosí,2.0,0.0,2.0,1.0,,,4,3
+1187124,11,2024,Group Stage - 3,Argentinos JRS,Corinthians,1.0,0.0,5.0,2.0,0.0,1.0,4,4
+1187125,11,2024,Group Stage - 3,Alianza Petrolera,Universidad Catolica,1.0,3.0,2.0,3.0,,,1,1
+1187126,11,2024,Group Stage - 3,Danubio,Atletico Paranaense,0.0,1.0,1.0,1.0,,,5,5
+1187127,11,2024,Group Stage - 3,Coquimbo Unido,Racing Club,1.0,2.0,2.0,2.0,,,7,1
+1187128,11,2024,Group Stage - 3,RB Bragantino,Sportivo Luqueno,2.0,1.0,3.0,2.0,,,6,1
+1187129,11,2024,Group Stage - 3,Real Tomayapo,Belgrano Cordoba,0.0,2.0,2.0,2.0,0.0,1.0,3,4
+1187130,11,2024,Group Stage - 3,Rayo Zuliano,Sportivo Ameliano,0.0,4.0,3.0,2.0,,,4,4
+1187131,11,2024,Group Stage - 3,Nacional Asuncion,Racing Montevideo,2.0,2.0,,,,,7,2
+1187132,11,2024,Group Stage - 3,Metropolitanos FC,Lanus,0.0,2.0,4.0,1.0,,,8,2
+1187133,11,2024,Group Stage - 3,Fortaleza EC,Boca Juniors,4.0,2.0,4.0,3.0,1.0,0.0,5,7
+1187134,11,2024,Group Stage - 3,Always Ready,Cesar Vallejo,2.0,0.0,0.0,4.0,,,9,4
+1187135,11,2024,Group Stage - 3,Independiente Medellin,Defensa Y Justicia,2.0,1.0,3.0,4.0,,,2,9
+1187136,11,2024,Group Stage - 3,Delfin SC,Internacional,1.0,2.0,2.0,3.0,,,2,3
+1187137,11,2024,Group Stage - 4,Racing Montevideo,Argentinos JRS,2.0,1.0,1.0,2.0,,,3,9
+1187138,11,2024,Group Stage - 4,Nacional Asuncion,Corinthians,0.0,2.0,3.0,1.0,1.0,0.0,8,6
+1187139,11,2024,Group Stage - 4,Cesar Vallejo,Independiente Medellin,1.0,5.0,2.0,1.0,,,6,2
+1187140,11,2024,Group Stage - 4,Real Tomayapo,Internacional,0.0,2.0,3.0,1.0,1.0,0.0,1,14
+1187141,11,2024,Group Stage - 4,Alianza Petrolera,Cruzeiro,0.0,3.0,3.0,2.0,,,2,9
+1187142,11,2024,Group Stage - 4,Sportivo Ameliano,Danubio,2.0,1.0,1.0,1.0,,,7,5
+1187143,11,2024,Group Stage - 4,Always Ready,Defensa Y Justicia,3.0,0.0,0.0,5.0,0.0,1.0,5,4
+1187144,11,2024,Group Stage - 4,Rayo Zuliano,Atletico Paranaense,1.0,5.0,2.0,1.0,,,5,4
+1187145,11,2024,Group Stage - 4,Sportivo Luqueno,Coquimbo Unido,0.0,0.0,2.0,3.0,,,6,3
+1187146,11,2024,Group Stage - 4,Nacional Potosí,Fortaleza EC,4.0,1.0,2.0,1.0,,,8,2
+1187147,11,2024,Group Stage - 4,Cuiaba,Metropolitanos FC,3.0,0.0,1.0,4.0,,,7,4
+1187148,11,2024,Group Stage - 4,Sportivo Trinidense,Boca Juniors,1.0,2.0,6.0,2.0,1.0,0.0,1,8
+1187149,11,2024,Group Stage - 4,Belgrano Cordoba,Delfin SC,1.0,1.0,4.0,4.0,1.0,0.0,4,3
+1187150,11,2024,Group Stage - 4,RB Bragantino,Racing Club,2.0,1.0,1.0,3.0,,,4,9
+1187151,11,2024,Group Stage - 4,Deportivo Garcilaso,Lanus,0.0,2.0,3.0,5.0,,,16,1
+1187152,11,2024,Group Stage - 4,Universidad Catolica,Union La Calera,4.0,0.0,0.0,1.0,,,8,2
+1187153,11,2024,Group Stage - 5,Racing Montevideo,Nacional Asuncion,2.0,1.0,2.0,2.0,,,5,3
+1187154,11,2024,Group Stage - 5,Defensa Y Justicia,Independiente Medellin,1.0,1.0,4.0,5.0,,,10,0
+1187155,11,2024,Group Stage - 5,Sportivo Ameliano,Rayo Zuliano,1.0,0.0,0.0,1.0,,,6,3
+1187156,11,2024,Group Stage - 5,Corinthians,Argentinos JRS,4.0,0.0,1.0,2.0,,,6,3
+1187157,11,2024,Group Stage - 5,Nacional Potosí,Sportivo Trinidense,2.0,1.0,3.0,2.0,,,8,1
+1187158,11,2024,Group Stage - 5,Lanus,Metropolitanos FC,5.0,0.0,0.0,2.0,0.0,1.0,10,3
+1187159,11,2024,Group Stage - 5,Belgrano Cordoba,Real Tomayapo,1.0,0.0,1.0,1.0,,,9,3
+1187160,11,2024,Group Stage - 5,Atletico Paranaense,Danubio,1.0,2.0,3.0,3.0,,,10,2
+1187161,11,2024,Group Stage - 5,Cuiaba,Deportivo Garcilaso,1.0,1.0,0.0,4.0,,,9,4
+1187162,11,2024,Group Stage - 5,Boca Juniors,Fortaleza EC,1.0,1.0,4.0,3.0,,,10,4
+1187163,11,2024,Group Stage - 5,Cesar Vallejo,Always Ready,2.0,2.0,2.0,0.0,,,8,7
+1187164,11,2024,Group Stage - 5,Internacional,Delfin SC,1.0,0.0,2.0,2.0,,,6,7
+1187165,11,2024,Group Stage - 5,Racing Club,Coquimbo Unido,3.0,0.0,3.0,2.0,0.0,1.0,4,3
+1187166,11,2024,Group Stage - 5,Sportivo Luqueno,RB Bragantino,2.0,3.0,2.0,3.0,,,6,10
+1187167,11,2024,Group Stage - 5,Cruzeiro,Union La Calera,1.0,0.0,1.0,1.0,,,4,5
+1187168,11,2024,Group Stage - 5,Universidad Catolica,Alianza Petrolera,0.0,0.0,5.0,5.0,1.0,1.0,9,2
+1187169,11,2024,Group Stage - 6,Argentinos JRS,Nacional Asuncion,2.0,1.0,3.0,4.0,,,4,0
+1187170,11,2024,Group Stage - 6,Corinthians,Racing Montevideo,3.0,0.0,2.0,2.0,,,10,4
+1187171,11,2024,Group Stage - 6,Coquimbo Unido,RB Bragantino,1.0,1.0,4.0,3.0,,,5,3
+1187172,11,2024,Group Stage - 6,Racing Club,Sportivo Luqueno,3.0,0.0,3.0,3.0,,,5,3
+1187173,11,2024,Group Stage - 6,Internacional,Belgrano Cordoba,1.0,2.0,0.0,4.0,,,7,0
+1187174,11,2024,Group Stage - 6,Delfin SC,Real Tomayapo,4.0,3.0,0.0,1.0,,,5,5
+1187175,11,2024,Group Stage - 6,Lanus,Cuiaba,0.0,1.0,3.0,4.0,,,9,6
+1187176,11,2024,Group Stage - 6,Metropolitanos FC,Deportivo Garcilaso,1.0,1.0,3.0,5.0,,,4,3
+1187177,11,2024,Group Stage - 6,Defensa Y Justicia,Cesar Vallejo,0.0,1.0,,,1.0,0.0,3,4
+1187178,11,2024,Group Stage - 6,Independiente Medellin,Always Ready,4.0,0.0,3.0,5.0,,,1,2
+1187179,11,2024,Group Stage - 6,Boca Juniors,Nacional Potosí,4.0,0.0,1.0,1.0,,,8,0
+1187180,11,2024,Group Stage - 6,Fortaleza EC,Sportivo Trinidense,2.0,1.0,,,,,5,3
+1187181,11,2024,Group Stage - 6,Atletico Paranaense,Sportivo Ameliano,0.0,1.0,1.0,3.0,,,9,4
+1187182,11,2024,Group Stage - 6,Danubio,Rayo Zuliano,0.0,0.0,2.0,2.0,,,6,2
+1187183,11,2024,Group Stage - 6,Cruzeiro,Universidad Catolica,1.0,0.0,0.0,1.0,,,9,4
+1187184,11,2024,Group Stage - 6,Union La Calera,Alianza Petrolera,0.0,1.0,1.0,2.0,,,2,3
+1202641,11,2024,Round of 32,Barcelona SC,RB Bragantino,1.0,1.0,3.0,2.0,,,6,0
+1202642,11,2024,Round of 32,RB Bragantino,Barcelona SC,3.0,2.0,2.0,2.0,,,3,9
+1202643,11,2024,Round of 32,Cerro Porteno,Atletico Paranaense,1.0,1.0,3.0,4.0,,,4,8
+1202644,11,2024,Round of 32,Atletico Paranaense,Cerro Porteno,2.0,1.0,3.0,3.0,1.0,1.0,7,2
+1202645,11,2024,Round of 32,Palestino,Cuiaba,1.0,1.0,2.0,3.0,,,5,1
+1202646,11,2024,Round of 32,Cuiaba,Palestino,1.0,2.0,2.0,6.0,,,11,2
+1205344,11,2024,Round of 32,Rosario Central,Internacional,1.0,0.0,2.0,2.0,,,5,4
+1205345,11,2024,Round of 32,Internacional,Rosario Central,1.0,1.0,2.0,2.0,,,11,0
+1205346,11,2024,Round of 32,Huachipato,Racing Montevideo,2.0,3.0,2.0,4.0,,,11,4
+1205347,11,2024,Round of 32,Racing Montevideo,Huachipato,0.0,1.0,3.0,1.0,,,8,6
+1205348,11,2024,Round of 32,Libertad Asuncion,Universidad Catolica,2.0,0.0,1.0,3.0,,,8,5
+1205349,11,2024,Round of 32,Universidad Catolica,Libertad Asuncion,1.0,1.0,0.0,3.0,,,7,3
+1205350,11,2024,Round of 32,Independiente del Valle,Boca Juniors,0.0,0.0,1.0,2.0,,,10,2
+1205351,11,2024,Round of 32,Boca Juniors,Independiente del Valle,1.0,0.0,2.0,3.0,1.0,0.0,3,0
+1205352,11,2024,Round of 32,LDU de Quito,Always Ready,3.0,0.0,2.0,1.0,,,4,3
+1205353,11,2024,Round of 32,Always Ready,LDU de Quito,3.0,1.0,2.0,3.0,,,6,1
+1261152,11,2024,Round of 16,RB Bragantino,Corinthians,1.0,2.0,1.0,2.0,,,9,5
+1261153,11,2024,Round of 16,Corinthians,RB Bragantino,1.0,2.0,1.0,3.0,,,4,7
+1261154,11,2024,Round of 16,Boca Juniors,Cruzeiro,1.0,0.0,2.0,5.0,,,7,0
+1261155,11,2024,Round of 16,Cruzeiro,Boca Juniors,2.0,1.0,4.0,6.0,0.0,1.0,5,2
+1261156,11,2024,Round of 16,Rosario Central,Fortaleza EC,1.0,1.0,4.0,4.0,,,8,3
+1261157,11,2024,Round of 16,Fortaleza EC,Rosario Central,3.0,1.0,4.0,2.0,,,1,2
+1261158,11,2024,Round of 16,Huachipato,Racing Club,0.0,2.0,1.0,1.0,,,0,7
+1261159,11,2024,Round of 16,Racing Club,Huachipato,6.0,1.0,0.0,2.0,,,8,3
+1261160,11,2024,Round of 16,Libertad Asuncion,Sportivo Ameliano,1.0,1.0,3.0,5.0,,,11,0
+1261161,11,2024,Round of 16,Sportivo Ameliano,Libertad Asuncion,0.0,0.0,2.0,1.0,1.0,0.0,0,6
+1265728,11,2024,Round of 16,Atletico Paranaense,Belgrano Cordoba,2.0,1.0,3.0,5.0,,,9,5
+1265729,11,2024,Round of 16,Belgrano Cordoba,Atletico Paranaense,0.0,2.0,2.0,3.0,0.0,1.0,12,1
+1265730,11,2024,Round of 16,Palestino,Independiente Medellin,2.0,2.0,1.0,1.0,,,3,7
+1265731,11,2024,Round of 16,Independiente Medellin,Palestino,4.0,0.0,0.0,2.0,,,6,5
+1265732,11,2024,Round of 16,LDU de Quito,Lanus,1.0,2.0,2.0,1.0,,,13,8
+1265733,11,2024,Round of 16,Lanus,LDU de Quito,3.0,1.0,2.0,3.0,,,4,3
+1294586,11,2024,Quarter-finals,Fortaleza EC,Corinthians,,,0.0,0.0,0.0,0.0,0,0
+1294587,11,2024,Quarter-finals,Corinthians,Fortaleza EC,,,0.0,0.0,0.0,0.0,0,0
+1294588,11,2024,Quarter-finals,Lanus,Independiente Medellin,,,0.0,0.0,0.0,0.0,0,0
+1294589,11,2024,Quarter-finals,Independiente Medellin,Lanus,,,0.0,0.0,0.0,0.0,0,0
+1295060,11,2024,Quarter-finals,Atletico Paranaense,Racing Club,,,0.0,0.0,0.0,0.0,0,0
+1295061,11,2024,Quarter-finals,Racing Club,Atletico Paranaense,,,0.0,0.0,0.0,0.0,0,0
+1295062,11,2024,Quarter-finals,Libertad Asuncion,Cruzeiro,,,0.0,0.0,0.0,0.0,0,0
+1295063,11,2024,Quarter-finals,Cruzeiro,Libertad Asuncion,,,0.0,0.0,0.0,0.0,0,0
+1170083,73,2024,1st Round,Sousa,Cruzeiro,2.0,0.0,2.0,4.0,,,2,6
+1170084,73,2024,1st Round,Petrolina,Cascavel,3.0,2.0,0.0,0.0,0.0,0.0,0,0
+1170085,73,2024,1st Round,Anápolis,Tombense,1.0,0.0,0.0,0.0,0.0,0.0,0,0
+1170086,73,2024,1st Round,Nova Venécia,Botafogo SP,1.0,2.0,0.0,0.0,0.0,0.0,0,0
+1170087,73,2024,1st Round,Cianorte,Corinthians,0.0,3.0,1.0,2.0,,,6,7
+1170088,73,2024,1st Round,Olaria,São Bernardo,0.0,1.0,0.0,0.0,0.0,0.0,0,0
+1170089,73,2024,1st Round,Humaitá,Sampaio Correa,1.0,1.0,0.0,0.0,0.0,0.0,0,0
+1170090,73,2024,1st Round,Maranhão,Ferroviario,1.0,2.0,0.0,0.0,0.0,0.0,0,0
+1170091,73,2024,1st Round,Fluminense PI,Fortaleza EC,0.0,3.0,,,,,1,3
+1170092,73,2024,1st Round,Manauara,Retrô,1.0,2.0,0.0,0.0,0.0,0.0,0,0
+1170093,73,2024,1st Round,Porto Velho,remo,1.0,0.0,4.0,1.0,,,3,10
+1170094,73,2024,1st Round,River AC,Ypiranga-RS,1.0,1.0,6.0,2.0,,,4,4
+1170095,73,2024,1st Round,Real Noroeste,Cuiaba,1.0,4.0,0.0,0.0,0.0,0.0,0,0
+1170096,73,2024,1st Round,Audax Rio,Portuguesa RJ,0.0,0.0,0.0,0.0,0.0,0.0,0,0
+1170097,73,2024,1st Round,Treze,ABC,1.0,1.0,0.0,0.0,0.0,0.0,0,0
+1170098,73,2024,1st Round,GAS,Brusque,0.0,1.0,0.0,0.0,0.0,0.0,0,0
+1170099,73,2024,1st Round,Maringá,America Mineiro,2.0,0.0,0.0,0.0,0.0,0.0,0,0
+1170100,73,2024,1st Round,Independente AP,Amazonas,0.0,1.0,0.0,0.0,0.0,0.0,0,0
+1170101,73,2024,1st Round,Operario Ferroviario,Operario-PR,0.0,0.0,0.0,0.0,0.0,0.0,0,0
+1170102,73,2024,1st Round,Villa Nova,Aparecidense,1.0,0.0,0.0,0.0,0.0,0.0,0,0
+1170103,73,2024,1st Round,Moto Club,Bahia,0.0,4.0,0.0,0.0,0.0,0.0,0,0
+1170104,73,2024,1st Round,Portuguesa Santista,Caxias,0.0,1.0,0.0,0.0,0.0,0.0,0,0
+1170105,73,2024,1st Round,Trem,Sport Recife,0.0,4.0,0.0,0.0,0.0,0.0,0,0
+1170106,73,2024,1st Round,Murici Fc,Confiança,2.0,1.0,2.0,2.0,,,3,2
+1170107,73,2024,1st Round,Marcílio Dias,Vasco DA Gama,1.0,3.0,2.0,1.0,,,6,3
+1170108,73,2024,1st Round,Água Santa,Jacuipense,2.0,1.0,0.0,0.0,0.0,0.0,0,0
+1170109,73,2024,1st Round,São Luiz,Ituano,2.0,1.0,0.0,0.0,0.0,0.0,0,0
+1170110,73,2024,1st Round,Costa Rica ,America-RN,1.0,2.0,0.0,0.0,0.0,0.0,0,0
+1170111,73,2024,1st Round,União Rondonópolis,Atletico Goianiense,1.0,3.0,1.0,3.0,,,3,2
+1170112,73,2024,1st Round,Real FC,Sao Raimundo,2.0,1.0,0.0,0.0,0.0,0.0,0,0
+1170113,73,2024,1st Round,Rio Branco,CRB,0.0,0.0,0.0,0.0,0.0,0.0,0,0
+1170114,73,2024,1st Round,Athletic Club,Volta Redonda,1.0,0.0,0.0,0.0,0.0,0.0,0,0
+1170115,73,2024,1st Round,Águia de Marabá,Coritiba,3.0,2.0,0.0,0.0,0.0,0.0,0,0
+1170116,73,2024,1st Round,Capital,Tocantinópolis,2.0,1.0,0.0,0.0,0.0,0.0,0,0
+1170117,73,2024,1st Round,CEOV Operário,Criciuma,0.0,0.0,0.0,0.0,0.0,0.0,0,0
+1170118,73,2024,1st Round,AO Itabaiana,Brasiliense,0.0,1.0,6.0,2.0,,,7,4
+1170119,73,2024,1st Round,ASA,Internacional,0.0,2.0,0.0,0.0,0.0,0.0,0,0
+1170120,73,2024,1st Round,Itabuna,Nova Iguaçu,0.0,8.0,0.0,0.0,0.0,0.0,0,0
+1170121,73,2024,1st Round,Iguatu,Juventude,0.0,0.0,0.0,0.0,0.0,0.0,0,0
+1170122,73,2024,1st Round,Ji-Paraná,Paysandu,0.0,0.0,0.0,0.0,0.0,0.0,0,0
+1175673,73,2024,2nd Round,Botafogo SP,Anápolis,2.0,1.0,8.0,3.0,,,5,6
+1175674,73,2024,2nd Round,Ypiranga-RS,Porto Velho,2.0,0.0,0.0,0.0,0.0,0.0,0,0
+1175675,73,2024,2nd Round,Portuguesa RJ,Cuiaba,0.0,0.0,4.0,4.0,,,3,6
+1175676,73,2024,2nd Round,America-RN,São Luiz,3.0,0.0,1.0,3.0,,,2,7
+1175677,73,2024,2nd Round,Real FC,Atletico Goianiense,1.0,3.0,4.0,4.0,,,1,8
+1175678,73,2024,2nd Round,Águia de Marabá,Capital,3.0,0.0,0.0,0.0,0.0,0.0,0,0
+1178188,73,2024,2nd Round,CRB,Athletic Club,2.0,0.0,0.0,0.0,0.0,0.0,0,0
+1180004,73,2024,2nd Round,Villa Nova,Operario-PR,0.0,2.0,0.0,0.0,0.0,0.0,0,0
+1180005,73,2024,2nd Round,Vasco DA Gama,Água Santa,3.0,3.0,6.0,11.0,1.0,2.0,6,4
+1180006,73,2024,2nd Round,Sousa,Petrolina,1.0,0.0,0.0,0.0,0.0,0.0,0,0
+1180007,73,2024,2nd Round,Juventude,Paysandu,3.0,1.0,5.0,6.0,,,3,4
+1180008,73,2024,2nd Round,ABC,Brusque,1.0,1.0,2.0,1.0,,,6,8
+1180009,73,2024,2nd Round,Caxias,Bahia,2.0,2.0,3.0,6.0,,,2,4
+1180010,73,2024,2nd Round,Sport Recife,Murici Fc,1.0,1.0,1.0,3.0,,,6,4
+1180011,73,2024,2nd Round,Nova Iguaçu,Internacional,0.0,2.0,0.0,0.0,0.0,0.0,0,0
+1180012,73,2024,2nd Round,Sampaio Correa,Ferroviario,0.0,0.0,4.0,4.0,,,6,6
+1180013,73,2024,2nd Round,Brasiliense,Criciuma,1.0,1.0,4.0,7.0,,,7,5
+1180014,73,2024,2nd Round,São Bernardo,Corinthians,0.0,2.0,7.0,5.0,1.0,1.0,6,0
+1180015,73,2024,2nd Round,Maringá,Amazonas,0.0,1.0,0.0,0.0,0.0,0.0,0,0
+1181769,73,2024,2nd Round,Fortaleza EC,Retrô,0.0,0.0,2.0,5.0,,,8,2
+1196751,73,2024,3rd Round,Operario-PR,Gremio,0.0,0.0,1.0,4.0,,,3,13
+1196752,73,2024,3rd Round,Gremio,Operario-PR,3.0,1.0,3.0,2.0,,,5,5
+1196753,73,2024,3rd Round,Criciuma,Bahia,0.0,2.0,1.0,3.0,,,7,4
+1196754,73,2024,3rd Round,Sampaio Correa,Fluminense,0.0,2.0,3.0,1.0,,,1,5
+1196755,73,2024,3rd Round,Fluminense,Sampaio Correa,2.0,0.0,0.0,5.0,,,6,5
+1196756,73,2024,3rd Round,Sousa,RB Bragantino,1.0,1.0,1.0,4.0,1.0,0.0,1,7
+1196757,73,2024,3rd Round,RB Bragantino,Sousa,3.0,0.0,1.0,2.0,,,6,0
+1196758,73,2024,3rd Round,Goias,Cuiaba,1.0,0.0,2.0,4.0,,,4,4
+1196759,73,2024,3rd Round,Cuiaba,Goias,1.0,0.0,0.0,1.0,,,9,4
+1196760,73,2024,3rd Round,Botafogo,Vitoria,1.0,0.0,2.0,0.0,,,1,5
+1196761,73,2024,3rd Round,Vitoria,Botafogo,1.0,2.0,2.0,5.0,,,6,2
+1196762,73,2024,3rd Round,Fortaleza EC,Vasco DA Gama,0.0,0.0,0.0,3.0,,,4,3
+1196763,73,2024,3rd Round,Vasco DA Gama,Fortaleza EC,3.0,3.0,3.0,0.0,,,4,10
+1196764,73,2024,3rd Round,Flamengo,Amazonas,1.0,0.0,1.0,3.0,,,5,2
+1196765,73,2024,3rd Round,Amazonas,Flamengo,0.0,1.0,0.0,1.0,,,8,10
+1196766,73,2024,3rd Round,Águia de Marabá,Sao Paulo,1.0,3.0,4.0,3.0,1.0,0.0,0,9
+1196767,73,2024,3rd Round,Sao Paulo,Águia de Marabá,2.0,0.0,0.0,1.0,,,15,3
+1196768,73,2024,3rd Round,Ypiranga-RS,Atletico Paranaense,2.0,1.0,3.0,5.0,,,3,6
+1196769,73,2024,3rd Round,Atletico Paranaense,Ypiranga-RS,3.0,0.0,2.0,6.0,,,8,2
+1196770,73,2024,3rd Round,Internacional,Juventude,1.0,2.0,0.0,6.0,,,15,3
+1196771,73,2024,3rd Round,Juventude,Internacional,1.0,1.0,3.0,1.0,1.0,1.0,4,5
+1196772,73,2024,3rd Round,CRB,Ceara,1.0,0.0,2.0,2.0,,,7,5
+1196773,73,2024,3rd Round,Ceara,CRB,0.0,1.0,4.0,3.0,,,5,5
+1196774,73,2024,3rd Round,America-RN,Corinthians,1.0,2.0,3.0,3.0,,,6,9
+1196775,73,2024,3rd Round,Corinthians,America-RN,2.0,1.0,1.0,1.0,,,9,3
+1196776,73,2024,3rd Round,Brusque,Atletico Goianiense,0.0,1.0,0.0,3.0,,,3,7
+1196777,73,2024,3rd Round,Atletico Goianiense,Brusque,4.0,2.0,1.0,2.0,,,12,4
+1196778,73,2024,3rd Round,Atletico-MG,Sport Recife,2.0,0.0,1.0,2.0,,,4,4
+1196779,73,2024,3rd Round,Sport Recife,Atletico-MG,1.0,0.0,3.0,6.0,,,2,2
+1196780,73,2024,3rd Round,Palmeiras,Botafogo SP,2.0,1.0,2.0,4.0,,,9,3
+1196781,73,2024,3rd Round,Botafogo SP,Palmeiras,0.0,0.0,2.0,3.0,,,3,8
+1196966,73,2024,3rd Round,Bahia,Criciuma,1.0,0.0,1.0,0.0,,,8,1
+1251946,73,2024,Round of 16,Flamengo,Palmeiras,2.0,0.0,1.0,4.0,,,5,2
+1251947,73,2024,Round of 16,Palmeiras,Flamengo,1.0,0.0,0.0,3.0,,,11,4
+1251948,73,2024,Round of 16,Atletico Goianiense,Vasco DA Gama,1.0,1.0,5.0,1.0,1.0,0.0,7,7
+1251949,73,2024,Round of 16,Vasco DA Gama,Atletico Goianiense,1.0,0.0,2.0,2.0,0.0,1.0,1,5
+1251950,73,2024,Round of 16,Atletico Paranaense,RB Bragantino,2.0,0.0,4.0,1.0,,,1,6
+1251951,73,2024,Round of 16,RB Bragantino,Atletico Paranaense,2.0,3.0,5.0,2.0,,,11,1
+1251952,73,2024,Round of 16,Sao Paulo,Goias,2.0,0.0,2.0,1.0,0.0,1.0,8,2
+1251953,73,2024,Round of 16,Goias,Sao Paulo,0.0,0.0,3.0,5.0,1.0,1.0,5,4
+1251954,73,2024,Round of 16,CRB,Atletico-MG,2.0,2.0,1.0,2.0,1.0,0.0,3,7
+1251955,73,2024,Round of 16,Atletico-MG,CRB,3.0,0.0,0.0,2.0,,,5,1
+1251956,73,2024,Round of 16,Botafogo,Bahia,1.0,1.0,0.0,1.0,,,4,1
+1251957,73,2024,Round of 16,Bahia,Botafogo,1.0,0.0,3.0,3.0,1.0,1.0,7,4
+1251958,73,2024,Round of 16,Corinthians,Gremio,0.0,0.0,1.0,3.0,1.0,1.0,3,6
+1251959,73,2024,Round of 16,Gremio,Corinthians,0.0,0.0,2.0,4.0,,,6,4
+1251960,73,2024,Round of 16,Juventude,Fluminense,3.0,2.0,3.0,1.0,,,7,3
+1251961,73,2024,Round of 16,Fluminense,Juventude,2.0,2.0,1.0,4.0,,,14,2
+1294333,73,2024,Quarter-finals,Vasco DA Gama,Atletico Paranaense,2.0,1.0,2.0,4.0,1.0,1.0,4,2
+1294334,73,2024,Quarter-finals,Atletico Paranaense,Vasco DA Gama,2.0,1.0,4.0,2.0,0.0,1.0,9,1
+1294335,73,2024,Quarter-finals,Sao Paulo,Atletico-MG,0.0,1.0,2.0,4.0,,,7,2
+1294336,73,2024,Quarter-finals,Atletico-MG,Sao Paulo,0.0,0.0,4.0,4.0,,,1,5
+1294337,73,2024,Quarter-finals,Bahia,Flamengo,0.0,1.0,0.0,1.0,,,5,1
+1294338,73,2024,Quarter-finals,Flamengo,Bahia,1.0,0.0,1.0,2.0,,,7,0
+1294339,73,2024,Quarter-finals,Juventude,Corinthians,2.0,1.0,2.0,5.0,,,6,4
+1294340,73,2024,Quarter-finals,Corinthians,Juventude,3.0,1.0,5.0,3.0,,,9,2
+1305648,73,2024,Semi-finals,Vasco DA Gama,Atletico-MG,,,0.0,0.0,0.0,0.0,0,0
+1305649,73,2024,Semi-finals,Atletico-MG,Vasco DA Gama,,,0.0,0.0,0.0,0.0,0,0
+1305650,73,2024,Semi-finals,Flamengo,Corinthians,,,0.0,0.0,0.0,0.0,0,0
+1305651,73,2024,Semi-finals,Corinthians,Flamengo,,,0.0,0.0,0.0,0.0,0,0

@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Any, Dict
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -199,7 +199,7 @@ def preprocess_match_data(df: pd.DataFrame) -> pd.DataFrame:
     Preprocesses the match data by filling NaN values in yellow and red
     card columns with zeros, and adds columns for total yellow cards,
     total red cards, total corner kicks, and the league name based on
-    league_id.
+    league_id. Additionally, categorizes and standardizes the rounds.
 
     :param df: The DataFrame containing match data with columns such as
         yellow cards, red cards, and corner kicks.
@@ -208,6 +208,7 @@ def preprocess_match_data(df: pd.DataFrame) -> pd.DataFrame:
     """
     league_map = {11: "Libertadores", 13: "Sulamericana", 73: "Copa do Brasil"}
 
+    # Fill missing values in card columns with 0
     df = df.copy()
     df[
         ["yellow_cards_home", "yellow_cards_away", "red_cards_home", "red_cards_away"]
@@ -217,13 +218,34 @@ def preprocess_match_data(df: pd.DataFrame) -> pd.DataFrame:
         0
     )
 
+    # Create total card and corner kick columns
     df["total_yellow_cards"] = df["yellow_cards_home"] + df["yellow_cards_away"]
     df["total_red_cards"] = df["red_cards_home"] + df["red_cards_away"]
     df["total_corner_kicks"] = df["corner_kicks_home"] + df["corner_kicks_away"]
 
+    # Map league IDs to league names
     df["league_name"] = df["league_id"].map(league_map)
     df = df[df["goals_home"].notnull()].reset_index(drop=True)
 
+    # Categorização e padronização dos rounds
+    round_mapping = {
+        "2nd Round": "Playoffs",
+        "1st Round": "Playoffs",
+        "3rd Round": "Playoffs",
+        "Group Stage - 1": "Fase de Grupos",
+        "Group Stage - 2": "Fase de Grupos",
+        "Group Stage - 3": "Fase de Grupos",
+        "Group Stage - 4": "Fase de Grupos",
+        "Group Stage - 5": "Fase de Grupos",
+        "Group Stage - 6": "Fase de Grupos",
+        "Round of 16": "Oitavas",
+        "Round of 32": "Playoffs de Oitavas",
+        "Quarter-finals": "Quartas",
+    }
+
+    df["round"] = df["round"].map(round_mapping)
+
+    # Função auxiliar para obter o país de um time
     def get_country(team_name):
         """
         Retorna o país de um time com base no mapeamento de times por país.
@@ -233,6 +255,7 @@ def preprocess_match_data(df: pd.DataFrame) -> pd.DataFrame:
                 return country
         return "Desconhecido"
 
+    # Aplica a função get_country nas colunas de times
     df["home_country"] = df["home_team"].apply(get_country)
     df["away_country"] = df["away_team"].apply(get_country)
 
@@ -1510,5 +1533,527 @@ def plot_games_with_most_cards(df: pd.DataFrame, top_n: int = 10) -> None:
     ax.legend()
 
     # Display the plot
+    plt.tight_layout()
+    plt.show()
+
+
+def calculate_avg_goals_per_round(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Calculates the average number of goals per round.
+
+    :param df: DataFrame containing 'round', 'goals_home', and
+        'goals_away' columns.
+    :return: DataFrame with rounds and average goals.
+    """
+    df["total_goals"] = df["goals_home"] + df["goals_away"]
+    avg_goals_per_round = df.groupby("round")["total_goals"].mean().reset_index()
+    avg_goals_per_round.rename(columns={"total_goals": "Média de Gols"}, inplace=True)
+    avg_goals_per_round.sort_values(by="Média de Gols", ascending=False, inplace=True)
+
+    return avg_goals_per_round
+
+
+def plot_avg_goals_per_round(df: pd.DataFrame) -> None:
+    """
+    Plots a bar chart showing the average number of goals per round.
+
+    :param df: DataFrame containing match data including goals and
+        rounds.
+    """
+    avg_goals_per_round = calculate_avg_goals_per_round(df)
+
+    fig, ax = plt.subplots(figsize=(8, 5), facecolor=BACKGROUND_COLOR)
+    ax.set_facecolor(BACKGROUND_COLOR)
+
+    bars = ax.bar(
+        avg_goals_per_round["round"],
+        avg_goals_per_round["Média de Gols"],
+        color="#66b3ff",
+        edgecolor="black",
+    )
+
+    # Adicionar valores acima das barras
+    for bar in bars:
+        height = bar.get_height()
+        ax.text(
+            bar.get_x() + bar.get_width() / 2,
+            height,
+            f"{height:.2f}",
+            ha="center",
+            va="bottom",
+            fontsize=12,
+            color="black",
+            fontfamily=FONTFAMILY,
+        )
+
+    ax.set_title(
+        "Média de Gols por Fase",
+        fontsize=16,
+        fontweight="bold",
+        fontfamily=FONTFAMILY,
+        pad=TITLE_PADDING,
+    )
+    ax.set_xlabel("Fase", fontfamily=FONTFAMILY)
+    ax.set_ylabel("Média de Gols", fontfamily=FONTFAMILY)
+    ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+    ax.set_ylim(0, avg_goals_per_round["Média de Gols"].max() + 0.5)
+
+    plt.xticks(rotation=45, ha="right", fontfamily=FONTFAMILY)
+    plt.tight_layout()
+    plt.show()
+
+
+def calculate_avg_cards_per_round(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Calculates the average number of yellow and red cards per round.
+
+    :param df: DataFrame containing 'round', 'total_yellow_cards', and
+        'total_red_cards'.
+    :return: DataFrame with rounds and average cards.
+    """
+    df["total_cards"] = df["total_yellow_cards"] + df["total_red_cards"]
+    avg_cards_per_round = df.groupby("round")["total_cards"].mean().reset_index()
+    avg_cards_per_round.rename(
+        columns={"total_cards": "Média de Cartões"}, inplace=True
+    )
+    avg_cards_per_round.sort_values(
+        by="Média de Cartões", ascending=False, inplace=True
+    )
+
+    return avg_cards_per_round
+
+
+def plot_cards_per_round(df: pd.DataFrame) -> None:
+    """
+    Plots a stacked bar chart showing yellow and red cards per round.
+
+    :param df: DataFrame containing match data, including 'round' and
+        card columns.
+    """
+    cards_per_round = (
+        df.groupby("round")
+        .agg({"total_yellow_cards": "sum", "total_red_cards": "sum"})
+        .reset_index()
+    )
+
+    fig, ax = plt.subplots(figsize=(8, 5), facecolor=BACKGROUND_COLOR)
+    ax.set_facecolor(BACKGROUND_COLOR)
+
+    # Plotando o gráfico de barras empilhadas
+    cards_per_round.plot(
+        kind="bar", stacked=True, ax=ax, color=["yellow", "red"], edgecolor="black"
+    )
+
+    # Ajuste do título e rótulos dos eixos
+    ax.set_title(
+        "Cartões por Fase (Amarelos e Vermelhos)",
+        fontsize=16,
+        fontweight="bold",
+        fontfamily=FONTFAMILY,
+        pad=TITLE_PADDING,
+    )
+    ax.set_xlabel("Fase", fontfamily=FONTFAMILY)
+    ax.set_ylabel("Número de Cartões", fontfamily=FONTFAMILY)
+
+    # Ajuste dos ticks para mostrar o nome das fases corretamente
+    ax.set_xticklabels(
+        cards_per_round["round"], rotation=45, ha="right", fontfamily=FONTFAMILY
+    )
+
+    # Ajuste da legenda para nomes descritivos
+    plt.legend(
+        ["Cartões Amarelos", "Cartões Vermelhos"],
+        loc="upper left",
+        bbox_to_anchor=(1, 1),
+        fontsize=9,
+    )
+
+    # Layout ajustado
+    plt.tight_layout()
+    plt.show()
+
+
+def calculate_avg_corners_per_round(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Calculates the average number of corner kicks per round.
+
+    :param df: DataFrame containing 'round' and 'total_corner_kicks'
+        columns.
+    :return: DataFrame with rounds and average corner kicks.
+    """
+    avg_corners_per_round = (
+        df.groupby("round")["total_corner_kicks"].mean().reset_index()
+    )
+    avg_corners_per_round.rename(
+        columns={"total_corner_kicks": "Média de Escanteios"}, inplace=True
+    )
+    avg_corners_per_round.sort_values(
+        by="Média de Escanteios", ascending=False, inplace=True
+    )
+
+    return avg_corners_per_round
+
+
+def plot_avg_goals_per_round_and_league(df: pd.DataFrame) -> None:
+    """
+    Plots the average number of goals per round and league.
+
+    :param df: DataFrame containing 'league_name', 'round',
+        'goals_home', and 'goals_away' columns.
+    :return: None
+    """
+    avg_goals = (
+        df.groupby(["league_name", "round"])
+        .agg({"goals_home": "mean", "goals_away": "mean"})
+        .sum(axis=1)
+        .reset_index(name="Média de Gols")
+    )
+
+    fig, ax = plt.subplots(figsize=(12, 5), facecolor=BACKGROUND_COLOR)
+    ax.set_facecolor(BACKGROUND_COLOR)
+
+    sns.barplot(
+        x="round",
+        y="Média de Gols",
+        hue="league_name",
+        data=avg_goals,
+        ax=ax,
+        palette="Blues",
+    )
+
+    ax.set_title(
+        "Média de Gols por Fase e Campeonato",
+        fontsize=16,
+        fontweight="bold",
+        fontfamily=FONTFAMILY,
+        pad=TITLE_PADDING,
+    )
+    ax.set_xlabel("Fase", fontfamily=FONTFAMILY)
+    ax.set_ylabel("Média de Gols", fontfamily=FONTFAMILY)
+    plt.xticks(rotation=45, ha="right", fontfamily=FONTFAMILY)
+
+    # Legenda ajustada para fora do gráfico no canto superior direito
+    plt.legend(
+        title="Campeonato",
+        fontsize=9,
+        title_fontsize=10,
+        loc="upper left",
+        bbox_to_anchor=(1, 1),
+    )
+
+    plt.tight_layout()
+    plt.show()
+
+
+def count_matches_per_round(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Counts the number of matches per round.
+
+    :param df: DataFrame containing the 'round' column.
+    :return: DataFrame with rounds and match counts.
+    """
+    match_count_per_round = (
+        df.groupby("round").size().reset_index(name="Quantidade de Jogos")
+    )
+    match_count_per_round.sort_values(
+        by="Quantidade de Jogos", ascending=False, inplace=True
+    )
+
+    return match_count_per_round
+
+
+def plot_match_count_per_round(df: pd.DataFrame) -> None:
+    """
+    Plots the count of matches per round.
+
+    :param df: DataFrame containing match data.
+    :return: None
+    """
+    match_count_per_round = count_matches_per_round(df)
+
+    fig, ax = plt.subplots(figsize=(8, 5), facecolor=BACKGROUND_COLOR)
+    ax.set_facecolor(BACKGROUND_COLOR)
+
+    bars = ax.barh(
+        match_count_per_round["round"],
+        match_count_per_round["Quantidade de Jogos"],
+        color=COLOR_LIST[: len(match_count_per_round)],
+        edgecolor="black",
+    )
+
+    # Adicionar valores acima das barras
+    for bar in bars:
+        width = bar.get_width()
+        ax.text(
+            width,
+            bar.get_y() + bar.get_height() / 2,
+            f"{width:.0f}",
+            ha="left",
+            va="center",
+            fontsize=12,
+            color="black",
+            fontfamily=FONTFAMILY,
+        )
+
+    ax.set_title(
+        "Contagem de Jogos por Fase",
+        fontsize=16,
+        fontweight="bold",
+        fontfamily=FONTFAMILY,
+        pad=TITLE_PADDING,
+    )
+    ax.set_xlabel("Quantidade de Jogos", fontfamily=FONTFAMILY)
+    ax.set_ylabel("Fase", fontfamily=FONTFAMILY)
+    ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+
+    plt.tight_layout()
+    plt.show()
+
+
+def calculate_win_distribution_per_round(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Calculates the win, loss, and draw distribution per round.
+
+    :param df: DataFrame containing 'round', 'goals_home', and 'goals_away' columns.
+    :return: DataFrame with win distribution percentages per round.
+    """
+
+    def get_result(row):
+        if row["goals_home"] > row["goals_away"]:
+            return "Vitória Home"
+        elif row["goals_away"] > row["goals_home"]:
+            return "Vitória Away"
+        else:
+            return "Empate"
+
+    df["result"] = df.apply(get_result, axis=1)
+    result_distribution = df.groupby(["round", "result"]).size().unstack(fill_value=0)
+    result_distribution = (
+        result_distribution.div(result_distribution.sum(axis=1), axis=0) * 100
+    )
+
+    return result_distribution.reset_index()
+
+
+def plot_win_distribution_per_round(df: pd.DataFrame) -> None:
+    """
+    Plots the win distribution per round.
+
+    :param df: DataFrame containing match data.
+    :return: None
+    """
+    win_distribution_per_round = calculate_win_distribution_per_round(df)
+
+    fig, ax = plt.subplots(figsize=(8, 5), facecolor=BACKGROUND_COLOR)
+    ax.set_facecolor(BACKGROUND_COLOR)
+
+    win_distribution_per_round.plot(
+        kind="bar",
+        stacked=True,
+        ax=ax,
+        color=["#66b3ff", "#99ff99", "#ff9999"],
+        edgecolor="black",
+    )
+
+    ax.set_title(
+        "Distribuição de Resultados por Fase",
+        fontsize=16,
+        fontweight="bold",
+        fontfamily=FONTFAMILY,
+        pad=TITLE_PADDING,
+    )
+    ax.set_xlabel("Fase", fontfamily=FONTFAMILY)
+    ax.set_ylabel("Percentual (%)", fontfamily=FONTFAMILY)
+    ax.legend(title="Resultado", fontsize=12, title_fontsize=14)
+
+    plt.tight_layout()
+    plt.show()
+
+
+def plot_avg_cards_per_round_and_league(df: pd.DataFrame) -> None:
+    """
+    Plots the average number of yellow and red cards per round and
+    league.
+
+    :param df: DataFrame containing 'league_name', 'round',
+        'total_yellow_cards', and 'total_red_cards' columns.
+    :return: None
+    """
+    avg_cards = (
+        df.groupby(["league_name", "round"])
+        .agg({"total_yellow_cards": "mean", "total_red_cards": "mean"})
+        .sum(axis=1)
+        .reset_index(name="Média de Cartões")
+    )
+
+    fig, ax = plt.subplots(figsize=(8, 5), facecolor=BACKGROUND_COLOR)
+    ax.set_facecolor(BACKGROUND_COLOR)
+
+    sns.barplot(
+        x="round",
+        y="Média de Cartões",
+        hue="league_name",
+        data=avg_cards,
+        ax=ax,
+        palette="Blues",
+    )
+
+    ax.set_title(
+        "Média de Cartões por Fase e Campeonato",
+        fontsize=16,
+        fontweight="bold",
+        fontfamily=FONTFAMILY,
+        pad=TITLE_PADDING,
+    )
+    ax.set_xlabel("Fase", fontfamily=FONTFAMILY)
+    ax.set_ylabel("Média de Cartões", fontfamily=FONTFAMILY)
+    plt.xticks(rotation=45, ha="right", fontfamily=FONTFAMILY)
+
+    # Legenda ajustada para fora do gráfico no canto superior direito
+    plt.legend(
+        title="Campeonato",
+        fontsize=9,
+        title_fontsize=10,
+        loc="upper left",
+        bbox_to_anchor=(1, 1),
+    )
+
+    plt.tight_layout()
+    plt.show()
+
+
+def plot_avg_corners_per_round_and_league(df: pd.DataFrame) -> None:
+    """
+    Plots the average number of corner kicks per round and league.
+
+    :param df: DataFrame containing 'league_name', 'round',
+        'corner_kicks_home', and 'corner_kicks_away' columns.
+    :return: None
+    """
+    avg_corners = (
+        df.groupby(["league_name", "round"])
+        .agg({"corner_kicks_home": "mean", "corner_kicks_away": "mean"})
+        .sum(axis=1)
+        .reset_index(name="Média de Escanteios")
+    )
+
+    fig, ax = plt.subplots(figsize=(8, 5), facecolor=BACKGROUND_COLOR)
+    ax.set_facecolor(BACKGROUND_COLOR)
+
+    sns.barplot(
+        x="round",
+        y="Média de Escanteios",
+        hue="league_name",
+        data=avg_corners,
+        ax=ax,
+        palette="Blues",
+    )
+
+    ax.set_title(
+        "Média de Escanteios por Fase e Campeonato",
+        fontsize=16,
+        fontweight="bold",
+        fontfamily=FONTFAMILY,
+        pad=TITLE_PADDING,
+    )
+    ax.set_xlabel("Fase", fontfamily=FONTFAMILY)
+    ax.set_ylabel("Média de Escanteios", fontfamily=FONTFAMILY)
+    plt.xticks(rotation=45, ha="right", fontfamily=FONTFAMILY)
+
+    # Legenda ajustada para fora do gráfico no canto superior direito
+    plt.legend(
+        title="Campeonato",
+        fontsize=9,
+        title_fontsize=10,
+        loc="upper left",
+        bbox_to_anchor=(1, 1),
+    )
+
+    plt.tight_layout()
+    plt.show()
+
+
+def plot_card_percentages_per_round(df: pd.DataFrame) -> None:
+    """
+    Plots a 100% stacked bar chart showing the percentage of yellow and
+    red cards per round.
+
+    :param df: DataFrame containing match data, including 'round' and
+        card columns.
+    """
+    # Agrupar por fase e somar os cartões
+    cards_per_round = (
+        df.groupby("round")
+        .agg({"total_yellow_cards": "sum", "total_red_cards": "sum"})
+        .reset_index()
+    )
+
+    # Calcular os percentuais de cada tipo de cartão por fase
+    cards_per_round["percent_yellow"] = (
+        cards_per_round["total_yellow_cards"]
+        / (cards_per_round["total_yellow_cards"] + cards_per_round["total_red_cards"])
+    ) * 100
+    cards_per_round["percent_red"] = (
+        cards_per_round["total_red_cards"]
+        / (cards_per_round["total_yellow_cards"] + cards_per_round["total_red_cards"])
+    ) * 100
+
+    fig, ax = plt.subplots(figsize=(8, 5), facecolor=BACKGROUND_COLOR)
+    ax.set_facecolor(BACKGROUND_COLOR)
+
+    # Plotar o gráfico de barras 100% empilhadas
+    bars_yellow = ax.bar(
+        cards_per_round["round"],
+        cards_per_round["percent_yellow"],
+        color="yellow",
+        edgecolor="black",
+        label="Cartões Amarelos",
+    )
+    bars_red = ax.bar(
+        cards_per_round["round"],
+        cards_per_round["percent_red"],
+        bottom=cards_per_round["percent_yellow"],
+        color="red",
+        edgecolor="black",
+        label="Cartões Vermelhos",
+    )
+
+    # Ajuste do título e rótulos dos eixos
+    ax.set_title(
+        "Percentual de Cartões por Fase (Amarelos e Vermelhos)",
+        fontsize=16,
+        fontweight="bold",
+        fontfamily=FONTFAMILY,
+        pad=TITLE_PADDING,
+    )
+    ax.set_xlabel("Fase", fontfamily=FONTFAMILY)
+    ax.set_ylabel("Percentual de Cartões", fontfamily=FONTFAMILY)
+
+    # Ajuste dos ticks para mostrar o nome das fases corretamente
+    ax.set_xticks(range(len(cards_per_round["round"])))
+    ax.set_xticklabels(
+        cards_per_round["round"], rotation=45, ha="right", fontfamily=FONTFAMILY
+    )
+
+    # Mostrar percentuais dentro das barras amarelas (em preto e centralizado)
+    for bar_yellow in bars_yellow:
+        height = bar_yellow.get_height()
+        ax.annotate(
+            f"{height:.1f}%",  # Mostra o percentual
+            xy=(
+                bar_yellow.get_x() + bar_yellow.get_width() / 2,
+                height / 2,
+            ),  # Centralizado dentro da barra amarela
+            ha="center",
+            va="center",
+            fontsize=10,
+            fontfamily=FONTFAMILY,
+            color="black",  # Cor preta para visibilidade
+        )
+
+    # Ajuste da legenda
+    plt.legend(loc="upper left", bbox_to_anchor=(1, 1), fontsize=9)
+
+    # Layout ajustado
     plt.tight_layout()
     plt.show()
