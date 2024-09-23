@@ -3,9 +3,9 @@ import pandas as pd
 
 def preprocess_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Preprocesses the input DataFrame by renaming columns, ensuring numeric values,
-    and filtering out rows with null or zero values in the specified months.
-    Converts specified columns to integer type.
+    Preprocesses the input DataFrame by renaming columns, ensuring
+    numeric values, and filtering out rows with null or zero values in
+    the specified months. Converts specified columns to integer type.
 
     :param df: Original DataFrame to be preprocessed.
     :return: Preprocessed DataFrame.

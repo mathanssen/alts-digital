@@ -18,30 +18,18 @@ def plot_popularity_growth(df: pd.DataFrame) -> None:
     """
     df = df.drop(["Março", "Top"], axis=1)
 
-    # List of month columns
     months = ["april", "may", "june", "july", "august"]
 
-    # Ensure month columns are numeric
     df[months] = df[months].apply(pd.to_numeric, errors="coerce")
-
-    # Select only relevant columns
     df_months = df[["betting_house"] + months]
-
-    # Calculate total sum of accesses for each betting house
     df_months["total_sum"] = df_months[months].sum(axis=1)
-
-    # Calculate percentage growth from March to August
     df_months["growth_percentage"] = (
         (df_months["august"] - df_months["april"]) / df_months["april"]
     ) * 100
-
-    # Sort betting houses by highest growth percentage
     df_growth = df_months.sort_values(by="growth_percentage", ascending=False)
 
-    # Plot the percentage growth graph with horizontal bars
     fig, ax = plt.subplots(figsize=(10, 16), facecolor=BACKGROUND_COLOR)
     ax.set_facecolor(BACKGROUND_COLOR)
-
     sns.barplot(
         x="growth_percentage",
         y="betting_house",
@@ -50,8 +38,6 @@ def plot_popularity_growth(df: pd.DataFrame) -> None:
         edgecolor="black",
         ax=ax,
     )
-
-    # Add labels on top of the bars
     for bar in ax.patches:
         width = bar.get_width()
         ax.annotate(
@@ -65,7 +51,6 @@ def plot_popularity_growth(df: pd.DataFrame) -> None:
             xytext=(5, 0),
             textcoords="offset points",
         )
-
     ax.set_title(
         "Growth in Popularity of Betting Houses",
         fontsize=15,
@@ -83,7 +68,6 @@ def plot_popularity_growth(df: pd.DataFrame) -> None:
     plt.tight_layout()
     plt.show()
 
-    # Display betting houses with total accesses and growth percentage
     print("Betting Houses that gained the most popularity:")
 
 
@@ -93,7 +77,7 @@ def plot_analysis_growth(
     y: str = "betting_house",
     title: str = "Crescimento de Maio a Agosto",
     xlabel: str = "Crescimento (%)",
-    ylabel: str = "Betting House",
+    ylabel: str = "Casa de Aposta",
     figsize: tuple = (10, 8),
     background_color: str = BACKGROUND_COLOR,
     fontfamily: str = FONTFAMILY,
@@ -103,7 +87,8 @@ def plot_analysis_growth(
     annotate: bool = True,
 ) -> None:
     """
-    Plots the growth for betting houses with flexible customization options.
+    Plots the growth for betting houses with flexible customization
+    options.
 
     :param df: DataFrame containing data to be plotted.
     :param x: Column name for x-axis values.
@@ -111,7 +96,8 @@ def plot_analysis_growth(
     :param title: Title of the plot.
     :param xlabel: Label for the x-axis.
     :param ylabel: Label for the y-axis.
-    :param figsize: Tuple representing the size of the figure (width, height).
+    :param figsize: Tuple representing the size of the figure (width,
+        height).
     :param background_color: Background color for the figure.
     :param fontfamily: Font family for text in the plot.
     :param title_padding: Padding for the title.
@@ -119,11 +105,9 @@ def plot_analysis_growth(
     :param edgecolor: Edge color for the bars.
     :param annotate: Whether to annotate bars with their values.
     """
-    # Configuração do gráfico
     fig, ax = plt.subplots(figsize=figsize, facecolor=background_color)
     ax.set_facecolor(background_color)
 
-    # Ajuste para evitar o aviso do hue
     sns.barplot(
         x=x,
         y=y,
@@ -133,10 +117,9 @@ def plot_analysis_growth(
         palette=palette,
         edgecolor=edgecolor,
         ax=ax,
-        legend=False,  # Remover legenda automática gerada pelo hue
+        legend=False,
     )
 
-    # Definição dos títulos e rótulos
     ax.set_title(
         title,
         fontsize=15,
@@ -149,7 +132,6 @@ def plot_analysis_growth(
     ax.set_xlabel(xlabel, fontfamily=fontfamily, fontsize=12, color="gray")
     ax.set_ylabel(ylabel, fontfamily=fontfamily, fontsize=12, color="gray")
 
-    # Adicionar rótulos nos valores das barras
     if annotate:
         for bar in ax.patches:
             width = bar.get_width()
@@ -165,7 +147,6 @@ def plot_analysis_growth(
                 textcoords="offset points",
             )
 
-    # Configuração de fontes e layout
     plt.xticks(fontfamily=fontfamily)
     plt.yticks(fontfamily=fontfamily)
     plt.tight_layout()
@@ -190,14 +171,16 @@ def plot_evolution(
     legend_bbox: tuple = (1.05, 1),
 ) -> None:
     """
-    Plots the line chart showing the evolution of visits for the given betting houses with flexible customization options.
+    Plots the line chart showing the evolution of visits for the given
+    betting houses with flexible customization options.
 
     :param df: DataFrame containing the betting houses data.
     :param title: Title of the plot.
     :param x_labels: List of labels for the x-axis (e.g., months).
     :param xlabel: Label for the x-axis.
     :param ylabel: Label for the y-axis.
-    :param figsize: Tuple representing the size of the figure (width, height).
+    :param figsize: Tuple representing the size of the figure (width,
+        height).
     :param fontfamily: Font family for text in the plot.
     :param title_padding: Padding for the title.
     :param line_style: Line style for the plots.
@@ -210,20 +193,17 @@ def plot_evolution(
     """
     plt.figure(figsize=figsize)
 
-    # Usar paleta de cores do seaborn para obter cores diferentes
     colors = sns.color_palette("husl", len(df))
 
-    # Plotar a evolução para cada casa de aposta
     for i, (_, row) in enumerate(df.iterrows()):
         plt.plot(
             x_labels,
             row[x_labels],
             marker=marker_style,
             linestyle=line_style,
-            color=colors[i],  # Cor única para cada casa de aposta
+            color=colors[i],
             label=row["betting_house"],
         )
-
     plt.title(
         title,
         fontsize=15,
@@ -231,6 +211,7 @@ def plot_evolution(
         color="#323232",
         fontfamily=fontfamily,
         pad=title_padding,
+        loc="left",
     )
     plt.xlabel(xlabel, fontfamily=fontfamily, fontsize=12, color="gray")
     plt.ylabel(ylabel, fontfamily=fontfamily, fontsize=12, color="gray")
@@ -265,15 +246,18 @@ def plot_stable_rankings(
     invert_yaxis: bool = True,
 ) -> None:
     """
-    Plots the line chart showing the evolution of rankings for the given betting houses with flexible customization options.
+    Plots the line chart showing the evolution of rankings for the given
+    betting houses with flexible customization options.
 
     :param df: DataFrame containing the betting houses data.
     :param x_labels: List of labels for the x-axis (e.g., months).
-    :param y_columns: List of columns representing the rankings over time.
+    :param y_columns: List of columns representing the rankings over
+        time.
     :param title: Title of the plot.
     :param xlabel: Label for the x-axis.
     :param ylabel: Label for the y-axis.
-    :param figsize: Tuple representing the size of the figure (width, height).
+    :param figsize: Tuple representing the size of the figure (width,
+        height).
     :param fontfamily: Font family for text in the plot.
     :param title_padding: Padding for the title.
     :param line_style: Line style for the plots.
@@ -283,11 +267,11 @@ def plot_stable_rankings(
     :param grid_alpha: Transparency of the grid lines.
     :param legend_loc: Location of the legend.
     :param legend_bbox: Bounding box location for the legend.
-    :param invert_yaxis: Whether to invert the y-axis (lower is better for rankings).
+    :param invert_yaxis: Whether to invert the y-axis (lower is better
+        for rankings).
     """
     plt.figure(figsize=figsize)
 
-    # Plotar a evolução para cada casa de aposta
     for _, row in df.iterrows():
         plt.plot(
             x_labels,
@@ -303,6 +287,7 @@ def plot_stable_rankings(
         fontweight="bold",
         fontfamily=fontfamily,
         pad=title_padding,
+        loc="left",
     )
     plt.xlabel(xlabel, fontfamily=fontfamily, fontsize=12, color="gray")
     plt.ylabel(ylabel, fontfamily=fontfamily, fontsize=12, color="gray")
@@ -314,7 +299,7 @@ def plot_stable_rankings(
         plt.grid(True, linestyle=grid_style, alpha=grid_alpha)
 
     if invert_yaxis:
-        plt.gca().invert_yaxis()  # Inverter o eixo y para mostrar a menor posição no topo
+        plt.gca().invert_yaxis()
 
     plt.tight_layout()
     plt.show()
@@ -330,24 +315,19 @@ def calculate_monthly_variation(df: pd.DataFrame) -> dict:
              'max_change_value', 'percent_variation', and
              'top_changes_filtered'.
     """
-    # Calcular a média da variação em cada mês
     avg_rank_changes_filtered = {
         "may_june": df["rank_change_may_june"].mean(),
         "june_july": df["rank_change_june_july"].mean(),
         "july_august": df["rank_change_july_august"].mean(),
     }
-
-    # Identificar o mês com a maior variação média
     max_change_month = max(avg_rank_changes_filtered, key=avg_rank_changes_filtered.get)
     max_change_value = avg_rank_changes_filtered[max_change_month]
 
-    # Identificar as casas de apostas com maior variação neste mês
     df["max_rank_change"] = df[f"rank_change_{max_change_month}"]
     top_changes_filtered = df.sort_values(by="max_rank_change", ascending=False).head(
         10
     )
 
-    # Calcular a variação percentual
     total_houses_filtered = df.shape[0]
     percent_variation = (max_change_value / total_houses_filtered) * 100
 
@@ -375,8 +355,8 @@ def plot_top_changes(
     Plots the top 10 betting houses with the highest ranking change in
     the specified month.
 
-    :param df: DataFrame containing the top changes
-        filtered for the specified month.
+    :param df: DataFrame containing the top changes filtered for the
+        specified month.
     :param max_change_month: String representing the month with the
         highest variation.
     :param title: Title of the plot.
@@ -406,7 +386,7 @@ def plot_top_changes(
     )
 
     if invert_yaxis:
-        plt.gca().invert_yaxis()  # Inverter o eixo y para mostrar a maior mudança no topo
+        plt.gca().invert_yaxis()
 
     plt.tight_layout()
     plt.show()
@@ -614,17 +594,21 @@ def plot_brands_performance(
     invert_yaxis: bool = True,
 ) -> None:
     """
-    Plots a horizontal bar chart for the top brands showing their performance (growth or decline) in the last quarter.
+    Plots a horizontal bar chart for the top brands showing their
+    performance (growth or decline) in the last quarter.
 
-    :param top_brands: DataFrame containing top brands and their variation data.
-    :param performance_type: String indicating the type of performance: "growth" or "decline".
+    :param top_brands: DataFrame containing top brands and their
+        variation data.
+    :param performance_type: String indicating the type of performance:
+        "growth" or "decline".
     :param title_growth: Title of the plot for growth.
     :param title_decline: Title of the plot for decline.
     :param xlabel: Label for the x-axis.
     :param ylabel: Label for the y-axis.
     :param bar_color_growth: Color of the bars for growth.
     :param bar_color_decline: Color of the bars for decline.
-    :param figsize: Tuple representing the size of the figure (width, height).
+    :param figsize: Tuple representing the size of the figure (width,
+        height).
     :param fontfamily: Font family for text in the plot.
     :param title_padding: Padding for the title.
     :param invert_yaxis: Whether to invert the y-axis (default is True).
@@ -661,7 +645,7 @@ def plot_brands_performance(
     plt.ylabel(ylabel, fontfamily=fontfamily, fontsize=12, color="gray")
 
     if invert_yaxis:
-        plt.gca().invert_yaxis()  # Inverter o eixo y para mostrar a maior mudança no topo
+        plt.gca().invert_yaxis()
 
     plt.tight_layout()
     plt.show()
@@ -802,11 +786,15 @@ def calculate_position_variation(
     df: pd.DataFrame, ranking_columns: list
 ) -> pd.DataFrame:
     """
-    Calculates the position variation for betting houses across the given ranking columns.
+    Calculates the position variation for betting houses across the
+    given ranking columns.
 
-    :param df: DataFrame containing betting houses and their rankings over time.
-    :param ranking_columns: List of columns representing rankings over time.
-    :return: DataFrame with betting houses, initial and final ranking, and position variation.
+    :param df: DataFrame containing betting houses and their rankings
+        over time.
+    :param ranking_columns: List of columns representing rankings over
+        time.
+    :return: DataFrame with betting houses, initial and final ranking,
+        and position variation.
     """
     df["initial_rank"] = df[ranking_columns[0]]
     df["final_rank"] = df[ranking_columns[-1]]
@@ -832,9 +820,11 @@ def plot_position_gain_loss_simple(
     df: pd.DataFrame, title: str = "Position Gain/Loss for Betting Houses"
 ) -> None:
     """
-    Plots a horizontal bar chart showing position gain/loss for betting houses.
+    Plots a horizontal bar chart showing position gain/loss for betting
+    houses.
 
-    :param df: DataFrame containing betting houses and their position variations.
+    :param df: DataFrame containing betting houses and their position
+        variations.
     :param title: Title of the plot.
     """
     df_sorted = df.sort_values(by="position_variation", ascending=False)
@@ -860,9 +850,9 @@ def plot_position_gain_loss(
     df: pd.DataFrame,
     show_top_n: int = 5,
     show_only: str = None,
-    title: str = "Position Gain/Loss for Betting Houses",
-    xlabel: str = "Position Variation",
-    ylabel: str = "Betting House",
+    title: str = "Maiores Ganhos e Perdas de Posições",
+    xlabel: str = "Variação na Posição",
+    ylabel: str = "Casa de Aposta",
     bar_color_gained: str = "lightgreen",
     bar_color_lost: str = "lightcoral",
     bar_color_maintained: str = "lightgray",
@@ -872,18 +862,22 @@ def plot_position_gain_loss(
     invert_yaxis: bool = True,
 ) -> None:
     """
-    Plots a horizontal bar chart showing position gain/loss for betting houses.
+    Plots a horizontal bar chart showing position gain/loss for betting
+    houses.
 
-    :param df: DataFrame containing betting houses and their position variations.
+    :param df: DataFrame containing betting houses and their position
+        variations.
     :param show_top_n: Number of top gainers and losers to show.
-    :param show_only: "Gained", "Lost", or "Maintained" to show only those groups.
+    :param show_only: "Gained", "Lost", or "Maintained" to show only
+        those groups.
     :param title: Title of the plot.
     :param xlabel: Label for the x-axis.
     :param ylabel: Label for the y-axis.
     :param bar_color_gained: Color of bars for gained positions.
     :param bar_color_lost: Color of bars for lost positions.
     :param bar_color_maintained: Color of bars for maintained positions.
-    :param figsize: Tuple representing the size of the figure (width, height).
+    :param figsize: Tuple representing the size of the figure (width,
+        height).
     :param fontfamily: Font family for text in the plot.
     :param title_padding: Padding for the title.
     :param invert_yaxis: Whether to invert the y-axis (default is True).
@@ -936,11 +930,14 @@ def plot_position_gain_loss(
 
 def get_top_movers(df: pd.DataFrame, top_n: int = 5) -> pd.DataFrame:
     """
-    Returns a DataFrame with the top 'n' gainers, top 'n' losers, and those that maintained their position.
+    Returns a DataFrame with the top 'n' gainers, top 'n' losers, and
+    those that maintained their position.
 
-    :param df: DataFrame containing betting houses and their position variations.
+    :param df: DataFrame containing betting houses and their position
+        variations.
     :param top_n: Number of top gainers and top losers to include.
-    :return: DataFrame containing the top gainers, top losers, and maintained positions.
+    :return: DataFrame containing the top gainers, top losers, and
+        maintained positions.
     """
     # Selecionar os que mantiveram a posição
     maintained_df = df[df["performance"] == "Maintained"]
@@ -967,12 +964,16 @@ def calculate_drop_and_recovery(
     df: pd.DataFrame, ranking_columns: list
 ) -> pd.DataFrame:
     """
-    Identifies betting houses that had a significant drop in one month and recovered in subsequent months.
-    Returns the betting houses with the largest recoveries and their rankings over all months.
+    Identifies betting houses that had a significant drop in one month
+    and recovered in subsequent months. Returns the betting houses with
+    the largest recoveries and their rankings over all months.
 
-    :param df: DataFrame containing betting houses and their rankings over time.
-    :param ranking_columns: List of columns representing rankings over time.
-    :return: DataFrame with betting houses, rank in each month, and ordered by the largest recoveries.
+    :param df: DataFrame containing betting houses and their rankings
+        over time.
+    :param ranking_columns: List of columns representing rankings over
+        time.
+    :return: DataFrame with betting houses, rank in each month, and
+        ordered by the largest recoveries.
     """
     recovery_data = []
 
@@ -1033,7 +1034,7 @@ def calculate_drop_and_recovery(
 def plot_position_recovery_trend(
     df: pd.DataFrame,
     ranking_columns: list = ["rank_may", "rank_june", "rank_july", "rank_august"],
-    title: str = "Recovery Trend of Betting Houses",
+    title: str = "Recuperação de Posição das Casas de Aposta",
     figsize: tuple = (12, 6),
     fontfamily: str = "monospace",
     title_padding: int = 15,
@@ -1043,10 +1044,13 @@ def plot_position_recovery_trend(
     grid_alpha: float = 0.6,
 ) -> None:
     """
-    Plots the position trend for betting houses that dropped and recovered over time.
+    Plots the position trend for betting houses that dropped and
+    recovered over time.
 
-    :param df: DataFrame containing the betting houses and their rankings.
-    :param ranking_columns: List of columns representing rankings over time.
+    :param df: DataFrame containing the betting houses and their
+        rankings.
+    :param ranking_columns: List of columns representing rankings over
+        time.
     :param title: Title of the plot.
     :param figsize: Size of the figure (width, height).
     :param fontfamily: Font family for the text in the plot.
@@ -1071,11 +1075,16 @@ def plot_position_recovery_trend(
         )
 
     plt.title(
-        title, fontsize=15, fontweight="bold", pad=title_padding, fontfamily=fontfamily
+        title,
+        fontsize=15,
+        fontweight="bold",
+        pad=title_padding,
+        fontfamily=fontfamily,
+        loc="left",
     )
-    plt.xlabel("Month", fontfamily=fontfamily, fontsize=12, color="gray")
+    plt.xlabel("Mês", fontfamily=fontfamily, fontsize=12, color="gray")
     plt.ylabel(
-        "Ranking Position (Lower is Better)",
+        "Posição no Ranking",
         fontfamily=fontfamily,
         fontsize=12,
         color="gray",
@@ -1130,12 +1139,17 @@ def identify_recoveries(
     df: pd.DataFrame, drop_df: pd.DataFrame, columns: list
 ) -> pd.DataFrame:
     """
-    Identifies betting houses that recovered their rankings after a significant drop.
+    Identifies betting houses that recovered their rankings after a
+    significant drop.
 
-    :param df: DataFrame containing betting houses and their rankings over time.
-    :param drop_df: DataFrame containing betting houses with significant drops.
-    :param columns: List of columns representing rankings over consecutive months.
-    :return: DataFrame with betting houses that recovered after a significant drop.
+    :param df: DataFrame containing betting houses and their rankings
+        over time.
+    :param drop_df: DataFrame containing betting houses with significant
+        drops.
+    :param columns: List of columns representing rankings over
+        consecutive months.
+    :return: DataFrame with betting houses that recovered after a
+        significant drop.
     """
     recoveries = []
     for _, row in drop_df.iterrows():
@@ -1144,7 +1158,6 @@ def identify_recoveries(
         to_month = row["to_month"]
         drop_index = columns.index(to_month)
         if drop_index + 1 < len(columns):
-            # Verificar se recuperou no mês seguinte
             recovery = df.loc[
                 df["betting_house"] == house, columns[drop_index + 1]
             ].values[0]
@@ -1168,7 +1181,8 @@ def plot_recoveries(
     df: pd.DataFrame, title: str = "Betting Houses with Successful Recoveries"
 ) -> None:
     """
-    Plots a horizontal bar chart showing the recoveries of betting houses after a significant drop.
+    Plots a horizontal bar chart showing the recoveries of betting
+    houses after a significant drop.
 
     :param df: DataFrame containing betting houses and their recoveries.
     :param title: Title of the plot.
@@ -1192,12 +1206,16 @@ def calculate_position_and_visit_variation(
     df: pd.DataFrame, ranking_columns: list, visit_columns: list
 ) -> pd.DataFrame:
     """
-    Calculates the variation in positions and visits for betting houses between all consecutive months.
+    Calculates the variation in positions and visits for betting houses
+    between all consecutive months.
 
-    :param df: DataFrame containing betting houses, rankings, and visits over time.
-    :param ranking_columns: List of columns representing rankings over time.
+    :param df: DataFrame containing betting houses, rankings, and visits
+        over time.
+    :param ranking_columns: List of columns representing rankings over
+        time.
     :param visit_columns: List of columns representing visits over time.
-    :return: DataFrame with betting houses, position variation, and visit variation for all consecutive months.
+    :return: DataFrame with betting houses, position variation, and
+        visit variation for all consecutive months.
     """
     df_variation = df.copy()
 
@@ -1230,15 +1248,18 @@ def plot_position_vs_visits(
     point_color: str = "blue",
 ) -> None:
     """
-    Plots the relationship between position variation and visit variation for betting houses.
+    Plots the relationship between position variation and visit
+    variation for betting houses.
 
-    :param df: DataFrame containing betting houses, position variations, and visit variations.
+    :param df: DataFrame containing betting houses, position variations,
+        and visit variations.
     :param x_column: Column name for the x-axis (position variation).
     :param y_column: Column name for the y-axis (visit variation).
     :param title: Title of the plot.
     :param xlabel: Label for the x-axis.
     :param ylabel: Label for the y-axis.
-    :param figsize: Tuple representing the size of the figure (width, height).
+    :param figsize: Tuple representing the size of the figure (width,
+        height).
     :param fontfamily: Font family for text in the plot.
     :param point_color: Color for all points in the scatter plot.
     """
@@ -1268,9 +1289,11 @@ def plot_position_vs_visits_simple(
     title: str = "Position vs Visits Variation",
 ) -> None:
     """
-    Plots the relationship between position variation and visit variation for betting houses.
+    Plots the relationship between position variation and visit
+    variation for betting houses.
 
-    :param df: DataFrame containing betting houses, position variations, and visit variations.
+    :param df: DataFrame containing betting houses, position variations,
+        and visit variations.
     :param x_column: Column name for the x-axis (position variation).
     :param y_column: Column name for the y-axis (visit variation).
     :param title: Title of the plot.
@@ -1291,12 +1314,16 @@ def get_top_position_variations(
     df: pd.DataFrame, ranking_columns: list, top_n: int = 5
 ) -> pd.DataFrame:
     """
-    Identifies betting houses with the highest positive and negative position variations between consecutive months.
+    Identifies betting houses with the highest positive and negative
+    position variations between consecutive months.
 
-    :param df: DataFrame containing betting houses and their rankings over time.
-    :param ranking_columns: List of columns representing rankings over consecutive months.
+    :param df: DataFrame containing betting houses and their rankings
+        over time.
+    :param ranking_columns: List of columns representing rankings over
+        consecutive months.
     :param top_n: Number of top gainers and losers to return.
-    :return: DataFrame with betting houses and their position variations.
+    :return: DataFrame with betting houses and their position
+        variations.
     """
     variation_df = pd.DataFrame()
 
@@ -1324,11 +1351,15 @@ def get_top_position_variations(
 
 def calculate_visit_variation(df: pd.DataFrame, visit_columns: list) -> pd.DataFrame:
     """
-    Calculates the percentage variation in visits for the identified betting houses.
+    Calculates the percentage variation in visits for the identified
+    betting houses.
 
-    :param df: DataFrame containing betting houses and their position variations.
-    :param visit_columns: List of columns representing visits over consecutive months.
-    :return: DataFrame with betting houses, visit variations, and position variations.
+    :param df: DataFrame containing betting houses and their position
+        variations.
+    :param visit_columns: List of columns representing visits over
+        consecutive months.
+    :return: DataFrame with betting houses, visit variations, and
+        position variations.
     """
     df_visit_variation = df.copy()
     visit_variations = []
@@ -1357,10 +1388,11 @@ def calculate_visit_variation(df: pd.DataFrame, visit_columns: list) -> pd.DataF
 
 def display_position_and_visit_changes(df: pd.DataFrame) -> None:
     """
-    Displays the betting houses with the highest positive and negative position variations,
-    along with their visit variations.
+    Displays the betting houses with the highest positive and negative
+    position variations, along with their visit variations.
 
-    :param df: DataFrame containing betting houses, position variations, and visit variations.
+    :param df: DataFrame containing betting houses, position variations,
+        and visit variations.
     """
     for _, row in df.iterrows():
         print(f"{row['betting_house']}:")
@@ -1377,9 +1409,9 @@ def plot_monthly_visits_sum(
     df: pd.DataFrame,
     month_columns: list,
     bar_color: str = "skyblue",
-    title: str = "Total Monthly Visits",
-    xlabel: str = "Month",
-    ylabel: str = "Total Visits",
+    title: str = "Visitas Totais (Maio-Agosto)",
+    xlabel: str = "Mês",
+    ylabel: str = "Visitas Totais",
     figsize: tuple = (10, 6),
     fontfamily: str = FONTFAMILY,
     title_padding: int = TITLE_PADDING,
@@ -1395,15 +1427,18 @@ def plot_monthly_visits_sum(
     value_offset: tuple = (0, 5),
 ) -> None:
     """
-    Plots the total visits for each month as a bar chart with rounded values and a single bar color.
+    Plots the total visits for each month as a bar chart with rounded
+    values and a single bar color.
 
     :param df: Input DataFrame containing the monthly visit columns.
     :param month_columns: List of columns representing the months.
-    :param bar_color: Color of the bars in the chart (default is "skyblue").
+    :param bar_color: Color of the bars in the chart (default is
+        "skyblue").
     :param title: Title of the plot.
     :param xlabel: Label for the x-axis.
     :param ylabel: Label for the y-axis.
-    :param figsize: Tuple representing the size of the figure (width, height).
+    :param figsize: Tuple representing the size of the figure (width,
+        height).
     :param fontfamily: Font family for text in the plot.
     :param title_padding: Padding for the title.
     :param x_label_color: Color for x-axis label.
@@ -1413,9 +1448,11 @@ def plot_monthly_visits_sum(
     :param y_min: Minimum value for the y-axis.
     :param y_max: Maximum value for the y-axis.
     :param show_values: Boolean to show or hide values on top of bars.
-    :param value_fontsize: Font size for values displayed on top of bars.
+    :param value_fontsize: Font size for values displayed on top of
+        bars.
     :param value_color: Color of the values displayed on top of bars.
-    :param value_offset: Offset for the values displayed on top of bars (x, y).
+    :param value_offset: Offset for the values displayed on top of bars
+        (x, y).
     """
     # Calcular a soma das visitas para cada mês
     monthly_visits_sum = df[month_columns].sum()
@@ -1483,10 +1520,12 @@ def plot_monthly_visits_sum(
 
 def generate_comparison_summary(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Generates a summary DataFrame comparing position and visit variations.
+    Generates a summary DataFrame comparing position and visit
+    variations.
 
     :param df: DataFrame containing position and visit variations.
-    :return: Summary DataFrame with average variations and stability status.
+    :return: Summary DataFrame with average variations and stability
+        status.
     """
     df_summary = df.copy()
 
@@ -1518,12 +1557,14 @@ def generate_comparison_summary(df: pd.DataFrame) -> pd.DataFrame:
 
 def prepare_input_for_plot_adjusted(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Prepares the input DataFrame for the position vs. visit variation plot,
-    with predefined ranking and visit columns. Also includes the ranking in May
-    and formats the visit variation as percentages.
+    Prepares the input DataFrame for the position vs. visit variation
+    plot, with predefined ranking and visit columns. Also includes the
+    ranking in May and formats the visit variation as percentages.
 
-    :param df: Original DataFrame containing betting houses, rankings, and visits.
-    :return: Prepared DataFrame with average variations, stability status, ranking in May, and formatted visit variations.
+    :param df: Original DataFrame containing betting houses, rankings,
+        and visits.
+    :return: Prepared DataFrame with average variations, stability
+        status, ranking in May, and formatted visit variations.
     """
     # Definindo as colunas de ranking e visitas
     ranking_columns_example = ["rank_may", "rank_june", "rank_july", "rank_august"]
@@ -1582,13 +1623,17 @@ def plot_position_vs_visits_comparison(
     ylabel: str = "Average Position Variation",
 ) -> None:
     """
-    Plots the comparison of position variation and visit variation for betting houses.
+    Plots the comparison of position variation and visit variation for
+    betting houses.
 
-    :param df: DataFrame containing average variations and stability status.
+    :param df: DataFrame containing average variations and stability
+        status.
     :param title: Title of the plot.
     :param figsize: Size of the figure (width, height).
-    :param point_color_stable: Color of the points for stable betting houses.
-    :param point_color_unstable: Color of the points for unstable betting houses.
+    :param point_color_stable: Color of the points for stable betting
+        houses.
+    :param point_color_unstable: Color of the points for unstable
+        betting houses.
     :param fontfamily: Font family for text in the plot.
     :param grid_style: Line style for the grid.
     :param grid_alpha: Transparency level for the grid lines.

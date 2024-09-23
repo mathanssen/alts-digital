@@ -51,19 +51,20 @@ def get_avg_visits(df: pd.DataFrame) -> pd.DataFrame:
 def generate_visits_summary(df: pd.DataFrame) -> pd.DataFrame:
     """
     Generates a summary DataFrame with betting house, growth percentage,
-    sum of visits, and average visits for the months of May, June, July, and August.
-    Formats the visits and growth percentage for better readability.
+    sum of visits, and average visits for the months of May, June, July,
+    and August. Formats the visits and growth percentage for better
+    readability.
 
-    :param df: Input DataFrame containing 'betting_house', 'growth_percentage',
-               'may', 'june', 'july', and 'august' columns.
-    :return: DataFrame with columns 'betting_house', 'growth_percentage',
-             'visits_sum', and 'visits_avg' formatted as strings.
+    :param df: Input DataFrame containing 'betting_house',
+               'growth_percentage', 'may', 'june', 'july', and 'august'
+               columns.
+    :return: DataFrame with columns 'betting_house',
+             'growth_percentage', 'visits_sum', and 'visits_avg'
+             formatted as strings.
     """
-    # Calcular a soma e a média das visitas
     df["visits_sum"] = df[["may", "june", "july", "august"]].sum(axis=1)
     df["visits_avg"] = df[["may", "june", "july", "august"]].mean(axis=1)
 
-    # Função para formatar os números grandes
     def format_large_numbers(value):
         if value >= 1_000_000_000:
             return f"{value / 1_000_000_000:.1f} bilhões"
@@ -74,14 +75,11 @@ def generate_visits_summary(df: pd.DataFrame) -> pd.DataFrame:
         else:
             return str(int(value))
 
-    # Formatar os números de soma e média de visitas
     df["visits_sum"] = df["visits_sum"].apply(format_large_numbers)
     df["visits_avg"] = df["visits_avg"].apply(format_large_numbers)
 
-    # Formatar o crescimento percentual
     df["growth_percentage"] = df["growth_percentage"].apply(lambda x: f"{round(x)}%")
 
-    # Selecionar as colunas desejadas
     result_df = df[["betting_house", "growth_percentage", "visits_sum", "visits_avg"]]
 
     return result_df
