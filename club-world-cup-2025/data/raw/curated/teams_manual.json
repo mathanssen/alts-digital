@@ -1,0 +1,106 @@
+[
+  {
+    "team_name": "Corinthians",
+    "country": "Brazil",
+    "continent": "South America"
+  },
+  { "team_name": "Al Nassr", "country": "Saudi Arabia", "continent": "Asia" },
+  {
+    "team_name": "Vasco da Gama",
+    "country": "Brazil",
+    "continent": "South America"
+  },
+  {
+    "team_name": "Necaxa",
+    "country": "Mexico",
+    "continent": "North & Central America"
+  },
+  {
+    "team_name": "South Melbourne",
+    "country": "Australia",
+    "continent": "Oceania"
+  },
+  {
+    "team_name": "Manchester United",
+    "country": "England",
+    "continent": "Europe"
+  },
+  { "team_name": "Sydney FC", "country": "Australia", "continent": "Oceania" },
+  {
+    "team_name": "Deportivo Saprissa",
+    "country": "Costa Rica",
+    "continent": "North & Central America"
+  },
+  {
+    "team_name": "São Paulo",
+    "country": "Brazil",
+    "continent": "South America"
+  },
+  {
+    "team_name": "Internacional",
+    "country": "Brazil",
+    "continent": "South America"
+  },
+  { "team_name": "Sepahan", "country": "Iran", "continent": "Asia" },
+  {
+    "team_name": "Étoile du Sahel",
+    "country": "Tunisia",
+    "continent": "Africa"
+  },
+  {
+    "team_name": "Waitakere United",
+    "country": "New Zealand",
+    "continent": "Oceania"
+  },
+  {
+    "team_name": "Adelaide United",
+    "country": "Australia",
+    "continent": "Oceania"
+  },
+  {
+    "team_name": "LDU Quito",
+    "country": "Ecuador",
+    "continent": "South America"
+  },
+  { "team_name": "Al-Ahli", "country": "Saudi Arabia", "continent": "Asia" },
+  {
+    "team_name": "Atlante",
+    "country": "Mexico",
+    "continent": "North & Central America"
+  },
+  {
+    "team_name": "Pohang Steelers",
+    "country": "South Korea",
+    "continent": "Asia"
+  },
+  {
+    "team_name": "Al-Wahda",
+    "country": "United Arab Emirates",
+    "continent": "Asia"
+  },
+  {
+    "team_name": "Seongnam Ilhwa Chunma",
+    "country": "South Korea",
+    "continent": "Asia"
+  },
+  {
+    "team_name": "Team Wellington",
+    "country": "New Zealand",
+    "continent": "Oceania"
+  },
+  {
+    "team_name": "Guadalajara",
+    "country": "Mexico",
+    "continent": "North & Central America"
+  },
+  {
+    "team_name": "Hekari United",
+    "country": "Papua New Guinea",
+    "continent": "Oceania"
+  },
+  {
+    "team_name": "Estudiantes",
+    "country": "Argentina",
+    "continent": "South America"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "season": 2008,
+    "date": "2008-12-11",
+    "home_team_name": "Adelaide United",
+    "away_team_name": "Waitakere United",
+    "home_goals": 2,
+    "away_goals": 1,
+    "round": "Play-off for Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2008,
+    "date": "2008-12-13",
+    "home_team_name": "Al Ahly",
+    "away_team_name": "Pachuca",
+    "home_goals": 2,
+    "away_goals": 4,
+    "round": "Quarter-finals",
+    "status": "AET"
+  },
+  {
+    "season": 2008,
+    "date": "2008-12-14",
+    "home_team_name": "Adelaide United",
+    "away_team_name": "Gamba Osaka",
+    "home_goals": 0,
+    "away_goals": 1,
+    "round": "Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2008,
+    "date": "2008-12-17",
+    "home_team_name": "Pachuca",
+    "away_team_name": "LDU Quito",
+    "home_goals": 0,
+    "away_goals": 2,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2008,
+    "date": "2008-12-18",
+    "home_team_name": "Gamba Osaka",
+    "away_team_name": "Manchester United",
+    "home_goals": 3,
+    "away_goals": 5,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2008,
+    "date": "2008-12-18",
+    "home_team_name": "Al Ahly",
+    "away_team_name": "Adelaide United",
+    "home_goals": 0,
+    "away_goals": 1,
+    "round": "Fifth Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2008,
+    "date": "2008-12-21",
+    "home_team_name": "Pachuca",
+    "away_team_name": "Gamba Osaka",
+    "home_goals": 0,
+    "away_goals": 1,
+    "round": "Third Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2008,
+    "date": "2008-12-21",
+    "home_team_name": "LDU Quito",
+    "away_team_name": "Manchester United",
+    "home_goals": 0,
+    "away_goals": 1,
+    "round": "Final",
+    "status": "FT"
+  }
+]

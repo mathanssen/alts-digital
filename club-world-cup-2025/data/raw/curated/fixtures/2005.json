@@ -1,0 +1,72 @@
+[
+  {
+    "season": 2005,
+    "date": "2005-12-11",
+    "home_team_name": "Al-Ittihad",
+    "away_team_name": "Al Ahly",
+    "home_goals": 1,
+    "away_goals": 0,
+    "round": "Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2005,
+    "date": "2005-12-12",
+    "home_team_name": "Deportivo Saprissa",
+    "away_team_name": "Sydney FC",
+    "home_goals": 1,
+    "away_goals": 0,
+    "round": "Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2005,
+    "date": "2005-12-14",
+    "home_team_name": "São Paulo",
+    "away_team_name": "Al-Ittihad",
+    "home_goals": 3,
+    "away_goals": 2,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2005,
+    "date": "2005-12-15",
+    "home_team_name": "Liverpool",
+    "away_team_name": "Deportivo Saprissa",
+    "home_goals": 3,
+    "away_goals": 0,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2005,
+    "date": "2005-12-16",
+    "home_team_name": "Al Ahly",
+    "away_team_name": "Sydney FC",
+    "home_goals": 1,
+    "away_goals": 2,
+    "round": "Fifth Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2005,
+    "date": "2005-12-18",
+    "home_team_name": "Al-Ittihad",
+    "away_team_name": "Deportivo Saprissa",
+    "home_goals": 2,
+    "away_goals": 3,
+    "round": "Third Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2005,
+    "date": "2005-12-18",
+    "home_team_name": "São Paulo",
+    "away_team_name": "Liverpool",
+    "home_goals": 1,
+    "away_goals": 0,
+    "round": "Final",
+    "status": "FT"
+  }
+]

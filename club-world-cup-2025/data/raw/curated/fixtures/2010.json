@@ -1,0 +1,82 @@
+[
+  {
+    "season": 2010,
+    "date": "2010-12-08",
+    "home_team_name": "Al-Wahda",
+    "away_team_name": "Hekari United",
+    "home_goals": 3,
+    "away_goals": 0,
+    "round": "Play-off for Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2010,
+    "date": "2010-12-10",
+    "home_team_name": "TP Mazembe",
+    "away_team_name": "Pachuca",
+    "home_goals": 1,
+    "away_goals": 0,
+    "round": "Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2010,
+    "date": "2010-12-11",
+    "home_team_name": "Al-Wahda",
+    "away_team_name": "Seongnam Ilhwa Chunma",
+    "home_goals": 1,
+    "away_goals": 4,
+    "round": "Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2010,
+    "date": "2010-12-14",
+    "home_team_name": "TP Mazembe",
+    "away_team_name": "Internacional",
+    "home_goals": 2,
+    "away_goals": 0,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2010,
+    "date": "2010-12-15",
+    "home_team_name": "Seongnam Ilhwa Chunma",
+    "away_team_name": "Internazionale",
+    "home_goals": 0,
+    "away_goals": 3,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2010,
+    "date": "2010-12-15",
+    "home_team_name": "Pachuca",
+    "away_team_name": "Al-Wahda",
+    "home_goals": 2,
+    "away_goals": 2,
+    "round": "Fifth Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2010,
+    "date": "2010-12-18",
+    "home_team_name": "Internacional",
+    "away_team_name": "Seongnam Ilhwa Chunma",
+    "home_goals": 4,
+    "away_goals": 2,
+    "round": "Third Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2010,
+    "date": "2010-12-18",
+    "home_team_name": "TP Mazembe",
+    "away_team_name": "Internazionale",
+    "home_goals": 0,
+    "away_goals": 3,
+    "round": "Final",
+    "status": "FT"
+  }
+]

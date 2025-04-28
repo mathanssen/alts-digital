@@ -1,0 +1,82 @@
+[
+  {
+    "season": 2009,
+    "date": "2009-12-09",
+    "home_team_name": "Al-Ahli",
+    "away_team_name": "Auckland City",
+    "home_goals": 0,
+    "away_goals": 2,
+    "round": "Play-off for Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2009,
+    "date": "2009-12-11",
+    "home_team_name": "TP Mazembe",
+    "away_team_name": "Pohang Steelers",
+    "home_goals": 1,
+    "away_goals": 2,
+    "round": "Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2009,
+    "date": "2009-12-12",
+    "home_team_name": "Atlante",
+    "away_team_name": "Auckland City",
+    "home_goals": 3,
+    "away_goals": 0,
+    "round": "Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2009,
+    "date": "2009-12-15",
+    "home_team_name": "Pohang Steelers",
+    "away_team_name": "Estudiantes",
+    "home_goals": 1,
+    "away_goals": 2,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2009,
+    "date": "2009-12-16",
+    "home_team_name": "Atlante",
+    "away_team_name": "Barcelona",
+    "home_goals": 1,
+    "away_goals": 3,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2009,
+    "date": "2009-12-16",
+    "home_team_name": "TP Mazembe",
+    "away_team_name": "Auckland City",
+    "home_goals": 2,
+    "away_goals": 3,
+    "round": "Fifth Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2009,
+    "date": "2009-12-19",
+    "home_team_name": "Pohang Steelers",
+    "away_team_name": "Atlante",
+    "home_goals": 1,
+    "away_goals": 1,
+    "round": "Third Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2009,
+    "date": "2009-12-19",
+    "home_team_name": "Barcelona",
+    "away_team_name": "Estudiantes",
+    "home_goals": 2,
+    "away_goals": 1,
+    "round": "Final",
+    "status": "AET"
+  }
+]

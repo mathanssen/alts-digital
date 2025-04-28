@@ -1,0 +1,72 @@
+[
+  {
+    "season": 2007,
+    "date": "2007-12-07",
+    "home_team_name": "Sepahan",
+    "away_team_name": "Waitakere United",
+    "home_goals": 3,
+    "away_goals": 1,
+    "round": "Play-off for Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2007,
+    "date": "2007-12-09",
+    "home_team_name": "Étoile du Sahel",
+    "away_team_name": "Pachuca",
+    "home_goals": 1,
+    "away_goals": 0,
+    "round": "Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2007,
+    "date": "2007-12-10",
+    "home_team_name": "Urawa Red Diamonds",
+    "away_team_name": "Sepahan",
+    "home_goals": 3,
+    "away_goals": 1,
+    "round": "Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2007,
+    "date": "2007-12-12",
+    "home_team_name": "Boca Juniors",
+    "away_team_name": "Étoile du Sahel",
+    "home_goals": 1,
+    "away_goals": 0,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2007,
+    "date": "2007-12-13",
+    "home_team_name": "Milan",
+    "away_team_name": "Urawa Red Diamonds",
+    "home_goals": 1,
+    "away_goals": 0,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2007,
+    "date": "2007-12-16",
+    "home_team_name": "Étoile du Sahel",
+    "away_team_name": "Urawa Red Diamonds",
+    "home_goals": 2,
+    "away_goals": 2,
+    "round": "Third Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2007,
+    "date": "2007-12-16",
+    "home_team_name": "Milan",
+    "away_team_name": "Boca Juniors",
+    "home_goals": 4,
+    "away_goals": 2,
+    "round": "Final",
+    "status": "FT"
+  }
+]

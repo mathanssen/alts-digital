@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Carlo Ancelotti",
+    "current_club": "Real Madrid",
+    "country": "Italy",
+    "national_titles": 9,
+    "continental_titles": 9,
+    "career_matches": 1377,
+    "career_wins": 818,
+    "win_percentage": 59.4
+  },
+  {
+    "name": "Pep Guardiola",
+    "current_club": "Manchester City",
+    "country": "Spain",
+    "national_titles": 17,
+    "continental_titles": 7,
+    "career_matches": 973,
+    "career_wins": 697,
+    "win_percentage": 71.6
+  },
+  {
+    "name": "Vincent Kompany",
+    "current_club": "Bayern Munich",
+    "country": "Belgium",
+    "national_titles": 1,
+    "continental_titles": 0,
+    "career_matches": 217,
+    "career_wins": 105,
+    "win_percentage": 48.4
+  },
+  {
+    "name": "Luis Enrique",
+    "current_club": "Paris Saint-Germain",
+    "country": "Spain",
+    "national_titles": 7,
+    "continental_titles": 3,
+    "career_matches": 534,
+    "career_wins": 325,
+    "win_percentage": 60.9
+  },
+  {
+    "name": "Enzo Maresca",
+    "current_club": "Chelsea",
+    "country": "Italy",
+    "national_titles": 1,
+    "continental_titles": 0,
+    "career_matches": 145,
+    "career_wins": 86,
+    "win_percentage": 59.3
+  },
+  {
+    "name": "Niko Kovač",
+    "current_club": "Borussia Dortmund",
+    "country": "Croatia",
+    "national_titles": 3,
+    "continental_titles": 0,
+    "career_matches": 393,
+    "career_wins": 202,
+    "win_percentage": 51.4
+  },
+  {
+    "name": "Simone Inzaghi",
+    "current_club": "Inter Milan",
+    "country": "Italy",
+    "national_titles": 6,
+    "continental_titles": 0,
+    "career_matches": 549,
+    "career_wins": 330,
+    "win_percentage": 60.1
+  },
+  {
+    "name": "Martín Anselmi",
+    "current_club": "FC Porto",
+    "country": "Argentina",
+    "national_titles": 1,
+    "continental_titles": 2,
+    "career_matches": 154,
+    "career_wins": 85,
+    "win_percentage": 55.2
+  },
+  {
+    "name": "Bruno Lage",
+    "current_club": "Benfica",
+    "country": "Portugal",
+    "national_titles": 3,
+    "continental_titles": 0,
+    "career_matches": 202,
+    "career_wins": 117,
+    "win_percentage": 57.9
+  },
+  {
+    "name": "Diego Simeone",
+    "current_club": "Atlético de Madrid",
+    "country": "Argentina",
+    "national_titles": 4,
+    "continental_titles": 4,
+    "career_matches": 707,
+    "career_wins": 420,
+    "win_percentage": 59.4
+  },
+  {
+    "name": "Igor Tudor",
+    "current_club": "Juventus",
+    "country": "Croatia",
+    "national_titles": 1,
+    "continental_titles": 0,
+    "career_matches": 312,
+    "career_wins": 144,
+    "win_percentage": 46.2
+  },
+  {
+    "name": "Thomas Letsch",
+    "current_club": "Red Bull Salzburg",
+    "country": "Germany",
+    "national_titles": 2,
+    "continental_titles": 0,
+    "career_matches": 407,
+    "career_wins": 188,
+    "win_percentage": 46.2
+  },
+  {
+    "name": "Abel Ferreira",
+    "current_club": "Palmeiras",
+    "country": "Portugal",
+    "national_titles": 4,
+    "continental_titles": 3,
+    "career_matches": 312,
+    "career_wins": 180,
+    "win_percentage": 57.7
+  },
+  {
+    "name": "Filipe Luís",
+    "current_club": "Flamengo",
+    "country": "Brazil",
+    "national_titles": 2,
+    "continental_titles": 0,
+    "career_matches": 26,
+    "career_wins": 19,
+    "win_percentage": 73.1
+  },
+  {
+    "name": "Renato Gaúcho",
+    "current_club": "Fluminense",
+    "country": "Brazil",
+    "national_titles": 2,
+    "continental_titles": 2,
+    "career_matches": 1012,
+    "career_wins": 497,
+    "win_percentage": 49.1
+  },
+  {
+    "name": "Renato Paiva",
+    "current_club": "Botafogo",
+    "country": "Portugal",
+    "national_titles": 1,
+    "continental_titles": 1,
+    "career_matches": 243,
+    "career_wins": 104,
+    "win_percentage": 42.8
+  },
+  {
+    "name": "Marcelo Gallardo",
+    "current_club": "River Plate",
+    "country": "Argentina",
+    "national_titles": 3,
+    "continental_titles": 6,
+    "career_matches": 420,
+    "career_wins": 235,
+    "win_percentage": 56.0
+  },
+  {
+    "name": "Fernando Gago",
+    "current_club": "Boca Juniors",
+    "country": "Argentina",
+    "national_titles": 0,
+    "continental_titles": 0,
+    "career_matches": 120,
+    "career_wins": 50,
+    "win_percentage": 41.7
+  },
+  {
+    "name": "Martín Demichelis",
+    "current_club": "Monterrey",
+    "country": "Argentina",
+    "national_titles": 1,
+    "continental_titles": 0,
+    "career_matches": 60,
+    "career_wins": 35,
+    "win_percentage": 58.3
+  },
+  {
+    "name": "Brian Schmetzer",
+    "current_club": "Seattle Sounders",
+    "country": "United States",
+    "national_titles": 2,
+    "continental_titles": 1,
+    "career_matches": 250,
+    "career_wins": 135,
+    "win_percentage": 54.0
+  },
+  {
+    "name": "Guillermo Almada",
+    "current_club": "Pachuca",
+    "country": "Uruguay",
+    "national_titles": 2,
+    "continental_titles": 1,
+    "career_matches": 622,
+    "career_wins": 295,
+    "win_percentage": 47.4
+  },
+  {
+    "name": "Javier Mascherano",
+    "current_club": "Inter Miami",
+    "country": "Argentina",
+    "national_titles": 0,
+    "continental_titles": 0,
+    "career_matches": 50,
+    "career_wins": 28,
+    "win_percentage": 56.0
+  },
+  {
+    "name": "Jorge Jesus",
+    "current_club": "Al-Hilal",
+    "country": "Portugal",
+    "national_titles": 11,
+    "continental_titles": 2,
+    "career_matches": 1104,
+    "career_wins": 674,
+    "win_percentage": 61.0
+  },
+  {
+    "name": "Maciej Skorża",
+    "current_club": "Urawa Red Diamonds",
+    "country": "Poland",
+    "national_titles": 8,
+    "continental_titles": 1,
+    "career_matches": 489,
+    "career_wins": 242,
+    "win_percentage": 49.5
+  },
+  {
+    "name": "Vladimir Ivić",
+    "current_club": "Al-Ain",
+    "country": "Serbia",
+    "national_titles": 3,
+    "continental_titles": 0,
+    "career_matches": 321,
+    "career_wins": 198,
+    "win_percentage": 61.7
+  },
+  {
+    "name": "Kim Pan-gon",
+    "current_club": "Ulsan HD",
+    "country": "South Korea",
+    "national_titles": 3,
+    "continental_titles": 0,
+    "career_matches": 121,
+    "career_wins": 65,
+    "win_percentage": 53.7
+  },
+  {
+    "name": "Rhulani Mokwena",
+    "current_club": "Wydad Casablanca",
+    "country": "South Africa",
+    "national_titles": 3,
+    "continental_titles": 1,
+    "career_matches": 233,
+    "career_wins": 138,
+    "win_percentage": 59.2
+  },
+  {
+    "name": "Maher Kanzari",
+    "current_club": "Espérance de Tunis",
+    "country": "Tunisia",
+    "national_titles": 1,
+    "continental_titles": 0,
+    "career_matches": 234,
+    "career_wins": 102,
+    "win_percentage": 43.6
+  },
+  {
+    "name": "Miguel Cardoso",
+    "current_club": "Mamelodi Sundowns",
+    "country": "Portugal",
+    "national_titles": 1,
+    "continental_titles": 0,
+    "career_matches": 137,
+    "career_wins": 60,
+    "win_percentage": 43.8
+  },
+  {
+    "name": "Albert Riera",
+    "current_club": "Auckland City",
+    "country": "Spain",
+    "national_titles": 4,
+    "continental_titles": 4,
+    "career_matches": 136,
+    "career_wins": 99,
+    "win_percentage": 72.8
+  }
+]

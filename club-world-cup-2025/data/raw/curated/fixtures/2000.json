@@ -1,0 +1,142 @@
+[
+  {
+    "season": 2000,
+    "date": "2000-01-05",
+    "home_team_name": "Corinthians",
+    "away_team_name": "Raja Casablanca",
+    "home_goals": 2,
+    "away_goals": 0,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-05",
+    "home_team_name": "Al Nassr",
+    "away_team_name": "Real Madrid",
+    "home_goals": 1,
+    "away_goals": 3,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-07",
+    "home_team_name": "Raja Casablanca",
+    "away_team_name": "Al Nassr",
+    "home_goals": 3,
+    "away_goals": 4,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-07",
+    "home_team_name": "Real Madrid",
+    "away_team_name": "Corinthians",
+    "home_goals": 2,
+    "away_goals": 2,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-10",
+    "home_team_name": "Corinthians",
+    "away_team_name": "Al Nassr",
+    "home_goals": 2,
+    "away_goals": 0,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-10",
+    "home_team_name": "Real Madrid",
+    "away_team_name": "Raja Casablanca",
+    "home_goals": 3,
+    "away_goals": 2,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-05",
+    "home_team_name": "Vasco da Gama",
+    "away_team_name": "South Melbourne",
+    "home_goals": 2,
+    "away_goals": 0,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-05",
+    "home_team_name": "Necaxa",
+    "away_team_name": "Manchester United",
+    "home_goals": 1,
+    "away_goals": 1,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-07",
+    "home_team_name": "South Melbourne",
+    "away_team_name": "Necaxa",
+    "home_goals": 0,
+    "away_goals": 3,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-07",
+    "home_team_name": "Manchester United",
+    "away_team_name": "Vasco da Gama",
+    "home_goals": 1,
+    "away_goals": 3,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-10",
+    "home_team_name": "South Melbourne",
+    "away_team_name": "Manchester United",
+    "home_goals": 0,
+    "away_goals": 2,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-10",
+    "home_team_name": "Vasco da Gama",
+    "away_team_name": "Necaxa",
+    "home_goals": 2,
+    "away_goals": 1,
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-14",
+    "home_team_name": "Real Madrid",
+    "away_team_name": "Necaxa",
+    "home_goals": 1,
+    "away_goals": 1,
+    "round": "Third Place",
+    "status": "FT"
+  },
+  {
+    "season": 2000,
+    "date": "2000-01-14",
+    "home_team_name": "Corinthians",
+    "away_team_name": "Vasco da Gama",
+    "home_goals": 0,
+    "away_goals": 0,
+    "round": "Final",
+    "status": "FT"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "season": 2018,
+    "date": "2018-12-12",
+    "home_team_name": "Al Ain",
+    "away_team_name": "Team Wellington",
+    "home_goals": 3,
+    "away_goals": 3,
+    "round": "First Round",
+    "status": "AET"
+  },
+  {
+    "season": 2018,
+    "date": "2018-12-15",
+    "home_team_name": "Espérance de Tunis",
+    "away_team_name": "Al Ain",
+    "home_goals": 0,
+    "away_goals": 3,
+    "round": "Second Round",
+    "status": "FT"
+  },
+  {
+    "season": 2018,
+    "date": "2018-12-15",
+    "home_team_name": "Kashima Antlers",
+    "away_team_name": "Guadalajara",
+    "home_goals": 3,
+    "away_goals": 2,
+    "round": "Second Round",
+    "status": "FT"
+  },
+  {
+    "season": 2018,
+    "date": "2018-12-18",
+    "home_team_name": "River Plate",
+    "away_team_name": "Al Ain",
+    "home_goals": 2,
+    "away_goals": 2,
+    "round": "Semi-finals",
+    "status": "AET"
+  },
+  {
+    "season": 2018,
+    "date": "2018-12-19",
+    "home_team_name": "Real Madrid",
+    "away_team_name": "Kashima Antlers",
+    "home_goals": 3,
+    "away_goals": 1,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2018,
+    "date": "2018-12-18",
+    "home_team_name": "Espérance de Tunis",
+    "away_team_name": "Guadalajara",
+    "home_goals": 1,
+    "away_goals": 1,
+    "round": "Fifth Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2018,
+    "date": "2018-12-22",
+    "home_team_name": "River Plate",
+    "away_team_name": "Kashima Antlers",
+    "home_goals": 4,
+    "away_goals": 0,
+    "round": "Third Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2018,
+    "date": "2018-12-22",
+    "home_team_name": "Real Madrid",
+    "away_team_name": "Al Ain",
+    "home_goals": 4,
+    "away_goals": 1,
+    "round": "Final",
+    "status": "FT"
+  }
+]

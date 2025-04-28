@@ -1,0 +1,72 @@
+[
+  {
+    "season": 2006,
+    "date": "2006-12-10",
+    "home_team_name": "Auckland City",
+    "away_team_name": "Al Ahly",
+    "home_goals": 0,
+    "away_goals": 2,
+    "round": "Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2006,
+    "date": "2006-12-11",
+    "home_team_name": "Jeonbuk Hyundai Motors",
+    "away_team_name": "América",
+    "home_goals": 0,
+    "away_goals": 1,
+    "round": "Quarter-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2006,
+    "date": "2006-12-13",
+    "home_team_name": "Al Ahly",
+    "away_team_name": "Internacional",
+    "home_goals": 1,
+    "away_goals": 2,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2006,
+    "date": "2006-12-14",
+    "home_team_name": "América",
+    "away_team_name": "Barcelona",
+    "home_goals": 0,
+    "away_goals": 4,
+    "round": "Semi-finals",
+    "status": "FT"
+  },
+  {
+    "season": 2006,
+    "date": "2006-12-15",
+    "home_team_name": "Auckland City",
+    "away_team_name": "Jeonbuk Hyundai Motors",
+    "home_goals": 0,
+    "away_goals": 3,
+    "round": "Fifth Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2006,
+    "date": "2006-12-17",
+    "home_team_name": "Al Ahly",
+    "away_team_name": "América",
+    "home_goals": 2,
+    "away_goals": 1,
+    "round": "Third Place Match",
+    "status": "FT"
+  },
+  {
+    "season": 2006,
+    "date": "2006-12-17",
+    "home_team_name": "Internacional",
+    "away_team_name": "Barcelona",
+    "home_goals": 1,
+    "away_goals": 0,
+    "round": "Final",
+    "status": "FT"
+  }
+]

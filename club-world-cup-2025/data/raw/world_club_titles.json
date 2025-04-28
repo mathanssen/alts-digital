@@ -1,0 +1,560 @@
+[
+  {
+    "team": "Real Madrid",
+    "country": "Spain",
+    "confederation": "UEFA",
+    "titles_national_leagues": 36,
+    "titles_national_cups": 20,
+    "titles_supercups": 13,
+    "titles_continental": {
+      "champions_league": 15,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 6,
+      "intercontinental": 9
+    }
+  },
+  {
+    "team": "Manchester City",
+    "country": "England",
+    "confederation": "UEFA",
+    "titles_national_leagues": 9,
+    "titles_national_cups": 6,
+    "titles_supercups": 3,
+    "titles_continental": {
+      "champions_league": 1,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 1,
+      "intercontinental": 1
+    }
+  },
+  {
+    "team": "Bayern de Munique",
+    "country": "Germany",
+    "confederation": "UEFA",
+    "titles_national_leagues": 33,
+    "titles_national_cups": 20,
+    "titles_supercups": 10,
+    "titles_continental": {
+      "champions_league": 6,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 2,
+      "intercontinental": 3
+    }
+  },
+  {
+    "team": "Paris Saint-Germain",
+    "country": "France",
+    "confederation": "UEFA",
+    "titles_national_leagues": 11,
+    "titles_national_cups": 14,
+    "titles_supercups": 11,
+    "titles_continental": {
+      "champions_league": 0,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 0,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Chelsea",
+    "country": "England",
+    "confederation": "UEFA",
+    "titles_national_leagues": 6,
+    "titles_national_cups": 8,
+    "titles_supercups": 5,
+    "titles_continental": {
+      "champions_league": 2,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 2,
+      "intercontinental": 1
+    }
+  },
+  {
+    "team": "Borussia Dortmund",
+    "country": "Germany",
+    "confederation": "UEFA",
+    "titles_national_leagues": 8,
+    "titles_national_cups": 5,
+    "titles_supercups": 6,
+    "titles_continental": {
+      "champions_league": 1,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 0,
+      "intercontinental": 1
+    }
+  },
+  {
+    "team": "Inter de Milão",
+    "country": "Italy",
+    "confederation": "UEFA",
+    "titles_national_leagues": 20,
+    "titles_national_cups": 9,
+    "titles_supercups": 7,
+    "titles_continental": {
+      "champions_league": 3,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 0,
+      "intercontinental": 3
+    }
+  },
+  {
+    "team": "Porto",
+    "country": "Portugal",
+    "confederation": "UEFA",
+    "titles_national_leagues": 30,
+    "titles_national_cups": 19,
+    "titles_supercups": 23,
+    "titles_continental": {
+      "champions_league": 2,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 1,
+      "intercontinental": 2
+    }
+  },
+  {
+    "team": "Benfica",
+    "country": "Portugal",
+    "confederation": "UEFA",
+    "titles_national_leagues": 38,
+    "titles_national_cups": 26,
+    "titles_supercups": 9,
+    "titles_continental": {
+      "champions_league": 2,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 0,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Atlético de Madrid",
+    "country": "Spain",
+    "confederation": "UEFA",
+    "titles_national_leagues": 11,
+    "titles_national_cups": 10,
+    "titles_supercups": 2,
+    "titles_continental": {
+      "champions_league": 0,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 3,
+      "intercontinental": 1
+    }
+  },
+  {
+    "team": "Juventus",
+    "country": "Italy",
+    "confederation": "UEFA",
+    "titles_national_leagues": 36,
+    "titles_national_cups": 14,
+    "titles_supercups": 9,
+    "titles_continental": {
+      "champions_league": 2,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 2,
+      "intercontinental": 2
+    }
+  },
+  {
+    "team": "Red Bull Salzburg",
+    "country": "Austria",
+    "confederation": "UEFA",
+    "titles_national_leagues": 17,
+    "titles_national_cups": 9,
+    "titles_supercups": 3,
+    "titles_continental": {
+      "champions_league": 0,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 0,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Palmeiras",
+    "country": "Brazil",
+    "confederation": "CONMEBOL",
+    "titles_national_leagues": 12,
+    "titles_national_cups": 4,
+    "titles_supercups": 1,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": 3,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 1,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Flamengo",
+    "country": "Brazil",
+    "confederation": "CONMEBOL",
+    "titles_national_leagues": 8,
+    "titles_national_cups": 4,
+    "titles_supercups": 2,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": 3,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 1,
+      "intercontinental": 1
+    }
+  },
+  {
+    "team": "Fluminense",
+    "country": "Brazil",
+    "confederation": "CONMEBOL",
+    "titles_national_leagues": 4,
+    "titles_national_cups": 1,
+    "titles_supercups": 0,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": 1,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 0,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Botafogo",
+    "country": "Brazil",
+    "confederation": "CONMEBOL",
+    "titles_national_leagues": 2,
+    "titles_national_cups": 0,
+    "titles_supercups": 1,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": 0,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 0,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "River Plate",
+    "country": "Argentina",
+    "confederation": "CONMEBOL",
+    "titles_national_leagues": 38,
+    "titles_national_cups": 14,
+    "titles_supercups": 3,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": 4,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 1,
+      "intercontinental": 1
+    }
+  },
+  {
+    "team": "Boca Juniors",
+    "country": "Argentina",
+    "confederation": "CONMEBOL",
+    "titles_national_leagues": 35,
+    "titles_national_cups": 16,
+    "titles_supercups": 3,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": 6,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": 4,
+      "intercontinental": 3
+    }
+  },
+  {
+    "team": "Monterrey",
+    "country": "Mexico",
+    "confederation": "CONCACAF",
+    "titles_national_leagues": 5,
+    "titles_national_cups": 0,
+    "titles_supercups": 1,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": 5,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": null,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Seattle Sounders",
+    "country": "USA",
+    "confederation": "CONCACAF",
+    "titles_national_leagues": 1,
+    "titles_national_cups": 1,
+    "titles_supercups": 1,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": 1,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": null,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Pachuca",
+    "country": "Mexico",
+    "confederation": "CONCACAF",
+    "titles_national_leagues": 7,
+    "titles_national_cups": 0,
+    "titles_supercups": 0,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": 5,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": null,
+      "intercontinental": 1
+    }
+  },
+  {
+    "team": "Inter Miami",
+    "country": "USA",
+    "confederation": "CONCACAF",
+    "titles_national_leagues": 0,
+    "titles_national_cups": 1,
+    "titles_supercups": 0,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": 0,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": null,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Al-Hilal",
+    "country": "Saudi Arabia",
+    "confederation": "AFC",
+    "titles_national_leagues": 18,
+    "titles_national_cups": 13,
+    "titles_supercups": 3,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": 4,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": null,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Urawa Red Diamonds",
+    "country": "Japan",
+    "confederation": "AFC",
+    "titles_national_leagues": 1,
+    "titles_national_cups": 7,
+    "titles_supercups": 6,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": 3,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": null,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Al-Ain",
+    "country": "UAE",
+    "confederation": "AFC",
+    "titles_national_leagues": 14,
+    "titles_national_cups": 7,
+    "titles_supercups": 5,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": 1,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": null,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Ulsan HD",
+    "country": "South Korea",
+    "confederation": "AFC",
+    "titles_national_leagues": 3,
+    "titles_national_cups": 1,
+    "titles_supercups": 1,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": 2,
+      "caf_champions_league": null,
+      "ofc_champions_league": null,
+      "supercup": null,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Al Ahly",
+    "country": "Egypt",
+    "confederation": "CAF",
+    "titles_national_leagues": 43,
+    "titles_national_cups": 38,
+    "titles_supercups": 13,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": 12,
+      "ofc_champions_league": null,
+      "supercup": 8,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Wydad Casablanca",
+    "country": "Morocco",
+    "confederation": "CAF",
+    "titles_national_leagues": 22,
+    "titles_national_cups": 9,
+    "titles_supercups": 1,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": 3,
+      "ofc_champions_league": null,
+      "supercup": null,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Espérance de Tunis",
+    "country": "Tunisia",
+    "confederation": "CAF",
+    "titles_national_leagues": 33,
+    "titles_national_cups": 15,
+    "titles_supercups": 6,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": 4,
+      "ofc_champions_league": null,
+      "supercup": null,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Mamelodi Sundowns",
+    "country": "South Africa",
+    "confederation": "CAF",
+    "titles_national_leagues": 13,
+    "titles_national_cups": 6,
+    "titles_supercups": 4,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": 1,
+      "ofc_champions_league": null,
+      "supercup": null,
+      "intercontinental": 0
+    }
+  },
+  {
+    "team": "Auckland City",
+    "country": "New Zealand",
+    "confederation": "OFC",
+    "titles_national_leagues": 12,
+    "titles_national_cups": 7,
+    "titles_supercups": 3,
+    "titles_continental": {
+      "champions_league": null,
+      "libertadores": null,
+      "concacaf_champions_cup": null,
+      "afc_champions_league": null,
+      "caf_champions_league": null,
+      "ofc_champions_league": 11,
+      "supercup": null,
+      "intercontinental": 0
+    }
+  }
+]
