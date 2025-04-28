@@ -2,33 +2,35 @@ from collections import defaultdict
 
 import pandas as pd
 
-def generate_club_statistics(fixtures_df, teams_info_df):
+
+def generate_club_statistics(
+    fixtures_df: pd.DataFrame,
+    teams_info_df: pd.DataFrame,
+) -> pd.DataFrame:
     """
-    Gera estatísticas consolidadas dos clubes a partir dos fixtures.
+    Generates consolidated club statistics from fixtures.
 
-    Args:
-        fixtures_df (pd.DataFrame): Fixtures combinados.
-        teams_info_df (pd.DataFrame): Times combinados.
-
-    Returns:
-        pd.DataFrame: Estatísticas dos clubes.
+    :param fixtures_df: Combined fixtures DataFrame.
+    :param teams_info_df: Combined teams information DataFrame.
+    :return: A pandas DataFrame with club statistics.
     """
-    club_stats = defaultdict(lambda: {
-        "club_name": "",
-        "country": "",
-        "continent": "",
-        "editions_played": set(),
-        "matches_played": 0,
-        "wins": 0,
-        "draws": 0,
-        "losses": 0,
-        "goals_for": 0,
-        "goals_against": 0,
-        "titles": 0,
-        "runners_up": 0,
-    })
+    club_stats: dict[str, dict[str, object]] = defaultdict(
+        lambda: {
+            "club_name": "",
+            "country": "",
+            "continent": "",
+            "editions_played": set(),
+            "matches_played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 0,
+            "goals_against": 0,
+            "titles": 0,
+            "runners_up": 0,
+        }
+    )
 
-    # Normalizar nomes
     teams_info_df["team_name_norm"] = teams_info_df["team_name"].str.lower().str.strip()
     teams_info_lookup = teams_info_df.set_index("team_name_norm").to_dict(orient="index")
 
@@ -73,9 +75,8 @@ def generate_club_statistics(fixtures_df, teams_info_df):
                 club_stats[away]["titles"] += 1
                 club_stats[home]["runners_up"] += 1
 
-    stats_list = []
-    for team_name, stats in club_stats.items():
-        stats_list.append({
+    stats_list = [
+        {
             "club_name": stats["club_name"],
             "country": stats["country"],
             "continent": stats["continent"],
@@ -88,6 +89,8 @@ def generate_club_statistics(fixtures_df, teams_info_df):
             "goals_against": stats["goals_against"],
             "titles": stats["titles"],
             "runners_up": stats["runners_up"],
-        })
+        }
+        for stats in club_stats.values()
+    ]
 
     return pd.DataFrame(stats_list)

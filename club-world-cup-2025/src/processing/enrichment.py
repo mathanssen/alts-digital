@@ -1,6 +1,3 @@
-import json
-from pathlib import Path
-
 import pandas as pd
 from api.teams import fetch_team_info
 
@@ -18,11 +15,13 @@ async def enrich_teams(team_ids: list[int | float]) -> pd.DataFrame:
         if pd.notnull(team_id):
             try:
                 info = await fetch_team_info(int(team_id))
-                enriched.append({
-                    "team_id": info["team_id"],
-                    "team_name": info["team_name"],
-                    "country": info["country"],
-                })
+                enriched.append(
+                    {
+                        "team_id": info["team_id"],
+                        "team_name": info["team_name"],
+                        "country": info["country"],
+                    }
+                )
             except Exception as error:
                 print(f"Error fetching team_id {team_id}: {error}")
 
